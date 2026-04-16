@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl *)",
+      "WebFetch(domain:boardgamegeek.com)",
+      "Bash(powershell.exe *)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(npx vite *)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:publicapi.dev)",
+      "WebFetch(domain:bgg-api.readthedocs.io)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(npm uninstall *)"
+    ]
+  }
+}
