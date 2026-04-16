@@ -12,7 +12,8 @@
       "WebFetch(domain:publicapi.dev)",
       "WebFetch(domain:bgg-api.readthedocs.io)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "Bash(npm uninstall *)"
+      "Bash(npm uninstall *)",
+      "Bash(node -e ' *)"
     ]
   }
 }

@@ -12,6 +12,7 @@ interface BoardGame {
   numPlays: number;
   players: string;
   playTime: string;
+  onLoan: boolean;
 }
 
 type Filter = 'all' | 'owned' | 'wishlist';
@@ -76,6 +77,7 @@ function App() {
           >
             <div className="card-image">
               <img src={game.image} alt={game.name} loading="lazy" />
+              {game.onLoan && <span className="badge loan-badge">Lent Out</span>}
               {game.wishlist && <span className="badge wishlist-badge">Wishlist</span>}
               {game.numPlays > 0 && (
                 <span className="badge plays-badge">

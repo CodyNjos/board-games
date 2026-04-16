@@ -149,6 +149,13 @@ header h1 {
   letter-spacing: 0.02em;
 }
 
+.loan-badge {
+  top: 0.5rem;
+  left: 0.5rem;
+  background: #d35400;
+  color: #fff;
+}
+
 .wishlist-badge {
   top: 0.5rem;
   left: 0.5rem;
