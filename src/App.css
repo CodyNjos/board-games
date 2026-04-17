@@ -40,6 +40,16 @@ header h1 {
   font-size: 2rem;
   color: var(--accent);
   margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.meeple {
+  width: 1.4em;
+  height: 1.4em;
+  fill: var(--accent);
 }
 
 .stats {
