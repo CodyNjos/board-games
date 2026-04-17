@@ -90,6 +90,41 @@ header h1 {
   border-color: var(--accent);
 }
 
+.player-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.player-label {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.player-options {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.player-options button {
+  background: var(--surface);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.65rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  min-width: 2rem;
+  transition: all 0.2s;
+}
+
+.player-options button:hover,
+.player-options button.active {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
 .sort {
   display: flex;
   align-items: center;

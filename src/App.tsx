@@ -17,12 +17,34 @@ interface BoardGame {
 
 type Filter = 'all' | 'owned' | 'wishlist';
 type SortBy = 'name' | 'year' | 'plays';
+type PlayerCount = null | 1 | 2 | 3 | 4 | 5 | 6;
+
+const PLAYER_OPTIONS: { label: string; value: PlayerCount }[] = [
+  { label: 'Any', value: null },
+  { label: '1', value: 1 },
+  { label: '2', value: 2 },
+  { label: '3', value: 3 },
+  { label: '4', value: 4 },
+  { label: '5', value: 5 },
+  { label: '6+', value: 6 },
+];
+
+function supportsPlayerCount(players: string, count: PlayerCount): boolean {
+  if (count === null || !players) return true;
+  const parts = players.split(/[-–]/);
+  const min = parseInt(parts[0], 10);
+  const max = parts.length > 1 ? parseInt(parts[1], 10) : min;
+  if (isNaN(min)) return true;
+  if (count === 6) return max >= 6;
+  return count >= min && count <= max;
+}
 
 const games: BoardGame[] = collection;
 
 function App() {
   const [filter, setFilter] = useState<Filter>('owned');
   const [sortBy, setSortBy] = useState<SortBy>('name');
+  const [playerCount, setPlayerCount] = useState<PlayerCount>(null);
 
   const ownedCount = games.filter((g) => g.owned).length;
   const wishlistCount = games.filter((g) => g.wishlist).length;
@@ -33,6 +55,7 @@ function App() {
       if (filter === 'wishlist') return g.wishlist;
       return true;
     })
+    .filter((g) => supportsPlayerCount(g.players, playerCount))
     .sort((a, b) => {
       if (sortBy === 'year') return b.yearPublished.localeCompare(a.yearPublished);
       if (sortBy === 'plays') return b.numPlays - a.numPlays;
@@ -63,6 +86,20 @@ function App() {
               {f === 'owned' ? `Owned (${ownedCount})` : `Wishlist (${wishlistCount})`}
             </button>
           ))}
+        </div>
+        <div className="player-filter">
+          <span className="player-label">Players</span>
+          <div className="player-options">
+            {PLAYER_OPTIONS.map((opt) => (
+              <button
+                key={opt.label}
+                className={playerCount === opt.value ? 'active' : ''}
+                onClick={() => setPlayerCount(opt.value)}
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
         </div>
         <div className="sort">
           <label htmlFor="sort-select">Sort by</label>
