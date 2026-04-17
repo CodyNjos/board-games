@@ -242,8 +242,8 @@
     "owned": true,
     "wishlist": false,
     "numPlays": 0,
-    "players": "",
-    "playTime": "",
+    "players": "2",
+    "playTime": "30",
     "onLoan": false
   },
   {
