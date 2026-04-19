@@ -362,7 +362,7 @@
     "players": "5-10",
     "playTime": "30",
     "onLoan": false
-  },
+2  },
   {
     "objectId": "66056",
     "name": "Rivals for Catan",
@@ -462,7 +462,7 @@
     "thumbnail": "https://cf.geekdo-images.com/A8e29LAMkGeOi9CKWJojmg__small/img/f7-y6MjveYDri80y7rNEG_khQvI=/fit-in/200x150/filters:strip_icc()/pic7040694.png",
     "owned": true,
     "wishlist": false,
-    "numPlays": 1,
+    "numPlays": 2,
     "players": "2-4",
     "playTime": "45-60",
     "onLoan": false
@@ -514,7 +514,7 @@
     "thumbnail": "https://cf.geekdo-images.com/50BhcxA_Dt4sU7Wasz4-rg__small/img/Y7RYVrJS8as3TIkJkLiOwDqRmqM=/fit-in/200x150/filters:strip_icc()/pic8685273.jpg",
     "owned": true,
     "wishlist": false,
-    "numPlays": 6,
+    "numPlays": 9,
     "players": "2",
     "playTime": "10-20",
     "onLoan": false
