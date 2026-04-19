@@ -1,3 +1,9 @@
+// Collection data source: BGG internal JSON API (no auth).
+//   https://api.geekdo.com/api/geekitems?objectid=<BGG_ID>&objecttype=thing
+// Returns a single game's metadata as JSON. Used to populate entries in
+// collection.json — fields mapped: objectid, yearpublished, minplayers/
+// maxplayers, minplaytime/maxplaytime, imageurl (image), images.thumb
+// (thumbnail). The older xmlapi2 endpoints now return 401.
 import { useState } from 'react';
 import collection from './collection.json';
 

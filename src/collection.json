@@ -382,11 +382,11 @@
     "yearPublished": "2024",
     "image": "https://cf.geekdo-images.com/Rb2Hw7IDaF7evNMjrqMmXA__original/img/1aBSwl0-UzJ-0p3h-zILKZtJJGM=/0x0/filters:format(jpeg)/pic7886346.jpg",
     "thumbnail": "https://cf.geekdo-images.com/Rb2Hw7IDaF7evNMjrqMmXA__small/img/w1wJgVzu16nnp_zm4wbMNmNSVzA=/fit-in/200x150/filters:strip_icc()/pic7886346.jpg",
-    "owned": false,
-    "wishlist": true,
+    "owned": true,
+    "wishlist": false,
     "numPlays": 0,
-    "players": "",
-    "playTime": "",
+    "players": "1-5",
+    "playTime": "25-45",
     "onLoan": false
   },
   {
@@ -530,6 +530,19 @@
     "numPlays": 6,
     "players": "2-5",
     "playTime": "30-60",
+    "onLoan": false
+  },
+  {
+    "objectId": "253284",
+    "name": "Ticket to Ride: New York",
+    "yearPublished": "2018",
+    "image": "https://cf.geekdo-images.com/v0YHI6x4g8dJdtSqaxMdiA__original/img/U0g-dhZFasfDloAJDxP1NT5ruDI=/0x0/filters:format(jpeg)/pic4132194.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/v0YHI6x4g8dJdtSqaxMdiA__small/img/wqM16CzK9QcarS8s6X6iAxvFe3Q=/fit-in/200x150/filters:strip_icc()/pic4132194.jpg",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "2-4",
+    "playTime": "10-15",
     "onLoan": false
   },
   {
