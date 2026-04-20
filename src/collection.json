@@ -205,7 +205,7 @@
     "numPlays": 0,
     "players": "2-4",
     "playTime": "120",
-    "onLoan": true
+    "onLoan": false
   },
   {
     "objectId": "185589",
@@ -257,7 +257,7 @@
     "numPlays": 0,
     "players": "2-5",
     "playTime": "90",
-    "onLoan": true
+    "onLoan": false
   },
   {
     "objectId": "181304",
@@ -322,7 +322,7 @@
     "numPlays": 0,
     "players": "2",
     "playTime": "15-30",
-    "onLoan": true
+    "onLoan": false
   },
   {
     "objectId": "367272",
@@ -668,6 +668,32 @@
     "yearPublished": "2014",
     "image": "https://cf.geekdo-images.com/2HKX0QANk_DY7CIVK5O5fQ__original/img/okv8rhQupsrXsEJsovQ_BJV5hKA=/0x0/filters:format(jpeg)/pic2869710.jpg",
     "thumbnail": "https://cf.geekdo-images.com/2HKX0QANk_DY7CIVK5O5fQ__small/img/zcjkqn_HYDIIyVAZaAxJIkurQRg=/fit-in/200x150/filters:strip_icc()/pic2869710.jpg",
+    "owned": false,
+    "wishlist": true,
+    "numPlays": 0,
+    "players": "",
+    "playTime": "",
+    "onLoan": false
+  },
+  {
+    "objectId": "46614",
+    "name": "Nonaga",
+    "yearPublished": "2017",
+    "image": "https://cf.geekdo-images.com/SbXFDTiZ5hr7hmujkoB51g__original/img/QSWHF1qRnfakxeA2cnlFLdgOI-U=/0x0/filters:format(jpeg)/pic9099559.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/SbXFDTiZ5hr7hmujkoB51g__small/img/hGxg7H8wTXg-Jly1C-pQVytHxPE=/fit-in/200x150/filters:strip_icc()/pic9099559.jpg",
+    "owned": false,
+    "wishlist": true,
+    "numPlays": 0,
+    "players": "",
+    "playTime": "",
+    "onLoan": false
+  },
+  {
+    "objectId": "232405",
+    "name": "Western Legends",
+    "yearPublished": "2018",
+    "image": "https://cf.geekdo-images.com/lZwgk3_MqyAmROjkz4v8Wg__original/img/W0gWMrkx5fEgVp8b2fMc-LfGmz8=/0x0/filters:format(png)/pic6974323.png",
+    "thumbnail": "https://cf.geekdo-images.com/lZwgk3_MqyAmROjkz4v8Wg__small/img/pI0Bnq7hO-Msonh7OJkKiHGnmfI=/fit-in/200x150/filters:strip_icc()/pic6974323.png",
     "owned": false,
     "wishlist": true,
     "numPlays": 0,

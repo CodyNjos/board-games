@@ -3,7 +3,8 @@
 // Returns a single game's metadata as JSON. Used to populate entries in
 // collection.json — fields mapped: objectid, yearpublished, minplayers/
 // maxplayers, minplaytime/maxplaytime, imageurl (image), images.thumb
-// (thumbnail). The older xmlapi2 endpoints now return 401.
+// (thumbnail). The xmlapi2 collection endpoint (requires auth since Jul 2025):
+//   https://boardgamegeek.com/xmlapi2/collection?username=pancreass
 import { useState } from 'react';
 import collection from './collection.json';
 
