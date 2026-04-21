@@ -634,7 +634,7 @@
     "numPlays": 0,
     "players": "2-4",
     "playTime": "20-40",
-    "onLoan": true
+    "onLoan": false
   },
   {
     "objectId": "361214",
@@ -647,7 +647,7 @@
     "numPlays": 0,
     "players": "2-6",
     "playTime": "20",
-    "onLoan": true
+    "onLoan": false
   },
   {
     "objectId": "230591",
@@ -660,7 +660,7 @@
     "numPlays": 0,
     "players": "2-4",
     "playTime": "30-45",
-    "onLoan": true
+    "onLoan": false
   },
   {
     "objectId": "158899",
