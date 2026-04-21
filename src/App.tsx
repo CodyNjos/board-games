@@ -23,7 +23,7 @@ interface BoardGame {
 }
 
 type Filter = 'all' | 'owned' | 'wishlist';
-type SortBy = 'name' | 'year' | 'plays';
+type SortBy = 'name' | 'year' | 'plays' | 'playTime';
 type PlayerCount = null | 1 | 2 | 3 | 4 | 5 | 6;
 
 const PLAYER_OPTIONS: { label: string; value: PlayerCount }[] = [
@@ -66,6 +66,11 @@ function App() {
     .sort((a, b) => {
       if (sortBy === 'year') return b.yearPublished.localeCompare(a.yearPublished);
       if (sortBy === 'plays') return b.numPlays - a.numPlays;
+      if (sortBy === 'playTime') {
+        const aTime = parseInt(a.playTime.split(/[-–]/)[0], 10) || 0;
+        const bTime = parseInt(b.playTime.split(/[-–]/)[0], 10) || 0;
+        return aTime - bTime;
+      }
       return a.name.localeCompare(b.name);
     });
 
@@ -114,6 +119,7 @@ function App() {
             <option value="name">Name</option>
             <option value="year">Year (newest)</option>
             <option value="plays">Most Played</option>
+            <option value="playTime">Play Time (shortest)</option>
           </select>
         </div>
       </div>
