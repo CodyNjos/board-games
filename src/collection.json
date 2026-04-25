@@ -426,7 +426,8 @@
     "numPlays": 0,
     "players": "2-4",
     "playTime": "20-40",
-    "onLoan": true
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "136554",
@@ -543,7 +544,8 @@
     "numPlays": 0,
     "players": "1-2",
     "playTime": "15",
-    "onLoan": true
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "235697",
@@ -855,7 +857,8 @@
     "numPlays": 0,
     "players": "2",
     "playTime": "30",
-    "onLoan": true
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "345972",
@@ -868,7 +871,8 @@
     "numPlays": 0,
     "players": "2-5",
     "playTime": "20-40",
-    "onLoan": true
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "223040",
@@ -881,7 +885,8 @@
     "numPlays": 4,
     "players": "2-6",
     "playTime": "20",
-    "onLoan": true
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "435356",
@@ -894,7 +899,8 @@
     "numPlays": 0,
     "players": "2",
     "playTime": "15-30",
-    "onLoan": true
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "2655",
@@ -907,7 +913,8 @@
     "numPlays": 0,
     "players": "2",
     "playTime": "20",
-    "onLoan": true
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "365727",
@@ -920,7 +927,8 @@
     "numPlays": 0,
     "players": "2-4",
     "playTime": "15-30",
-    "onLoan": true
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "244992",
@@ -933,7 +941,8 @@
     "numPlays": 0,
     "players": "2-4",
     "playTime": "20",
-    "onLoan": true
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "365702",
@@ -946,7 +955,8 @@
     "numPlays": 0,
     "players": "2-8",
     "playTime": "45",
-    "onLoan": true
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "354618",
@@ -959,7 +969,8 @@
     "numPlays": 0,
     "players": "3-7",
     "playTime": "20-35",
-    "onLoan": true
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "367220",
@@ -972,6 +983,7 @@
     "numPlays": 0,
     "players": "2-4",
     "playTime": "30-45",
-    "onLoan": true
+    "onLoan": true,
+    "loanNote": "In Transit"
   }
 ]
