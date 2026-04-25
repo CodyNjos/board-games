@@ -138,7 +138,7 @@ function App() {
               <img src={game.image} alt={game.name} loading="lazy" />
               {game.onLoan && (
                 <span className="badge loan-badge" title={game.loanNote || undefined}>
-                  Lent Out
+                  Out
                 </span>
               )}
               {game.wishlist && <span className="badge wishlist-badge">Wishlist</span>}
