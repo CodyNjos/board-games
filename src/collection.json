@@ -460,12 +460,13 @@
     "yearPublished": "2024",
     "image": "https://cf.geekdo-images.com/Rb2Hw7IDaF7evNMjrqMmXA__original/img/1aBSwl0-UzJ-0p3h-zILKZtJJGM=/0x0/filters:format(jpeg)/pic7886346.jpg",
     "thumbnail": "https://cf.geekdo-images.com/Rb2Hw7IDaF7evNMjrqMmXA__small/img/w1wJgVzu16nnp_zm4wbMNmNSVzA=/fit-in/200x150/filters:strip_icc()/pic7886346.jpg",
-    "owned": false,
-    "wishlist": true,
+    "owned": true,
+    "wishlist": false,
     "numPlays": 0,
     "players": "1-5",
     "playTime": "25-45",
-    "onLoan": false
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "266722",
@@ -618,12 +619,13 @@
     "yearPublished": "2014",
     "image": "https://cf.geekdo-images.com/EsJqPL5CB_TMt0MYL-lnVg__original/img/QXgamCDRuBoRJyU1PQjeh58Pvr8=/0x0/filters:format(jpeg)/pic1903816.jpg",
     "thumbnail": "https://cf.geekdo-images.com/EsJqPL5CB_TMt0MYL-lnVg__small/img/s_CE1b1XXUnYj9auTPhLrvkNsYA=/fit-in/200x150/filters:strip_icc()/pic1903816.jpg",
-    "owned": false,
-    "wishlist": true,
+    "owned": true,
+    "wishlist": false,
     "numPlays": 0,
     "players": "",
     "playTime": "",
-    "onLoan": false
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "162286",
