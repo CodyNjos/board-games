@@ -1069,8 +1069,7 @@
     "numPlays": 0,
     "players": "3-7",
     "playTime": "20-35",
-    "onLoan": true,
-    "loanNote": "In Transit"
+    "onLoan": false
   },
   {
     "objectId": "367220",
@@ -1083,7 +1082,6 @@
     "numPlays": 0,
     "players": "2-4",
     "playTime": "30-45",
-    "onLoan": true,
-    "loanNote": "In Transit"
+    "onLoan": false
   }
 ]
