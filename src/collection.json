@@ -1083,5 +1083,31 @@
     "players": "2-4",
     "playTime": "30-45",
     "onLoan": false
+  },
+  {
+    "objectId": "119890",
+    "name": "Agricola: All Creatures Big and Small",
+    "yearPublished": "2012",
+    "image": "https://cf.geekdo-images.com/iaxdcb_l3F8McwzyoiiCig__original/img/0jQpVjFEcjoIPpVGRf2DhO-jzLo=/0x0/filters:format(jpeg)/pic1514252.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/iaxdcb_l3F8McwzyoiiCig__small/img/UWsWeuOQpGv5asAoyrKgwL3pVj0=/fit-in/200x150/filters:strip_icc()/pic1514252.jpg",
+    "owned": false,
+    "wishlist": true,
+    "numPlays": 0,
+    "players": "",
+    "playTime": "",
+    "onLoan": false
+  },
+  {
+    "objectId": "438018",
+    "name": "Kanal",
+    "yearPublished": "2024",
+    "image": "https://cf.geekdo-images.com/Q6NaPbhotlLu7tPSmiGAVg__original/img/zYa1rwAUuXVweWtW4AlzxxjfhRw=/0x0/filters:format(jpeg)/pic8668308.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/Q6NaPbhotlLu7tPSmiGAVg__small/img/enVOIy6tUSP6kVwMWz9lx-YGpPc=/fit-in/200x150/filters:strip_icc()/pic8668308.jpg",
+    "owned": false,
+    "wishlist": true,
+    "numPlays": 0,
+    "players": "",
+    "playTime": "",
+    "onLoan": false
   }
 ]
