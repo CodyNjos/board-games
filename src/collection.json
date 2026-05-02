@@ -737,11 +737,11 @@
     "yearPublished": "2016",
     "image": "https://cf.geekdo-images.com/665Ply7Ho1WVf1v1iZlWeg__original/img/4q6RCxd7st-yW2MyrJwVC_d3ajk=/0x0/filters:format(png)/pic3283110.png",
     "thumbnail": "https://cf.geekdo-images.com/665Ply7Ho1WVf1v1iZlWeg__small/img/BKnSb6kAhpVFHV8cyUXrs3EF_dw=/fit-in/200x150/filters:strip_icc()/pic3283110.png",
-    "owned": false,
-    "wishlist": true,
+    "owned": true,
+    "wishlist": false,
     "numPlays": 0,
-    "players": "",
-    "playTime": "",
+    "players": "2-4",
+    "playTime": "20",
     "onLoan": false
   },
   {
