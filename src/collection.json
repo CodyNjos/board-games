@@ -161,12 +161,13 @@
     "yearPublished": "2021",
     "image": "https://cf.geekdo-images.com/K03e7G5PaII4S5ILIWPNfw__original/img/kXFUOkYDQFfay31uUBmwSPe6y6E=/0x0/filters:format(jpeg)/pic5440150.jpg",
     "thumbnail": "https://cf.geekdo-images.com/K03e7G5PaII4S5ILIWPNfw__small/img/qfEKfhMLEFqXYQAtcbOTEcfhSGo=/fit-in/200x150/filters:strip_icc()/pic5440150.jpg",
-    "owned": false,
-    "wishlist": true,
+    "owned": true,
+    "wishlist": false,
     "numPlays": 0,
-    "players": "",
-    "playTime": "",
-    "onLoan": false
+    "players": "1-4",
+    "playTime": "20-30",
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "329002",
@@ -722,12 +723,13 @@
     "yearPublished": "2024",
     "image": "https://cf.geekdo-images.com/3ue_3La0WYopTSDER3shUA__original/img/fm8i0N9fCQRGqNHgk0jh0gk01Ww=/0x0/filters:format(jpeg)/pic8389014.jpg",
     "thumbnail": "https://cf.geekdo-images.com/3ue_3La0WYopTSDER3shUA__small/img/4SreytxNoZL435EkTriKB08W5W0=/fit-in/200x150/filters:strip_icc()/pic8389014.jpg",
-    "owned": false,
-    "wishlist": true,
+    "owned": true,
+    "wishlist": false,
     "numPlays": 0,
-    "players": "",
-    "playTime": "",
-    "onLoan": false
+    "players": "1-4",
+    "playTime": "40-80",
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "194655",
@@ -814,12 +816,13 @@
     "yearPublished": "2014",
     "image": "https://cf.geekdo-images.com/GJKuOCy5HGAYgVH_Rei5mA__original/img/oRsIxp72iv58128KFdqvjG6Gz64=/0x0/filters:format(jpeg)/pic7070194.jpg",
     "thumbnail": "https://cf.geekdo-images.com/GJKuOCy5HGAYgVH_Rei5mA__small/img/Q3W4poMS4btD-HZLervgqbSCtmE=/fit-in/200x150/filters:strip_icc()/pic7070194.jpg",
-    "owned": false,
-    "wishlist": true,
+    "owned": true,
+    "wishlist": false,
     "numPlays": 0,
-    "players": "",
-    "playTime": "",
-    "onLoan": false
+    "players": "2",
+    "playTime": "15-20",
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "46614",
@@ -1169,12 +1172,13 @@
     "yearPublished": "2012",
     "image": "https://cf.geekdo-images.com/wHg4fOf48cs1kw1PDOk1tQ__original/img/St4ABQhpauYiq4Mt6-f38JtLOjM=/0x0/filters:format(jpeg)/pic3958793.jpg",
     "thumbnail": "https://cf.geekdo-images.com/wHg4fOf48cs1kw1PDOk1tQ__small/img/6l-jqYlfECK1SVSsUs7FXUheKzQ=/fit-in/200x150/filters:strip_icc()/pic3958793.jpg",
-    "owned": false,
-    "wishlist": true,
+    "owned": true,
+    "wishlist": false,
     "numPlays": 0,
-    "players": "",
-    "playTime": "",
-    "onLoan": false
+    "players": "2",
+    "playTime": "60",
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "220520",
@@ -1182,12 +1186,13 @@
     "yearPublished": "2017",
     "image": "https://cf.geekdo-images.com/rTlJoKU2lHOZfv1Ad8YvDA__original/img/gZmllkN9eYLyezrjLl8KEGJWlCo=/0x0/filters:format(jpeg)/pic3505750.jpg",
     "thumbnail": "https://cf.geekdo-images.com/rTlJoKU2lHOZfv1Ad8YvDA__small/img/_fvhogbWyAeMrwGsxmcUIy6yvA8=/fit-in/200x150/filters:strip_icc()/pic3505750.jpg",
-    "owned": false,
-    "wishlist": true,
+    "owned": true,
+    "wishlist": false,
     "numPlays": 0,
-    "players": "",
-    "playTime": "",
-    "onLoan": false
+    "players": "1-2",
+    "playTime": "20-40",
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "391137",
@@ -1201,5 +1206,19 @@
     "players": "",
     "playTime": "",
     "onLoan": false
+  },
+  {
+    "objectId": "351605",
+    "name": "Bohnanza: 25th Anniversary Edition",
+    "yearPublished": "2022",
+    "image": "https://cf.geekdo-images.com/TCWH1FOU7PWnv66_gzrR2A__original/img/3Yvdfj9S1Wi6Wy_IpoP6mHxcJ3w=/0x0/filters:format(jpeg)/pic8621122.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/TCWH1FOU7PWnv66_gzrR2A__small/img/wkviUfs3Et4YBl0d5_QRIHnz0k8=/fit-in/200x150/filters:strip_icc()/pic8621122.jpg",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "2-7",
+    "playTime": "45",
+    "onLoan": true,
+    "loanNote": "In Transit"
   }
 ]
