@@ -53,12 +53,16 @@ function App() {
   const [filter, setFilter] = useState<Filter>('owned');
   const [sortBy, setSortBy] = useState<SortBy>('name');
   const [playerCount, setPlayerCount] = useState<PlayerCount>(null);
+  const [search, setSearch] = useState('');
 
   const ownedCount = games.filter((g) => g.owned).length;
   const wishlistCount = games.filter((g) => g.wishlist).length;
 
   const filtered = games
     .filter((g) => {
+      if (search) {
+        return g.name.toLowerCase().includes(search.toLowerCase());
+      }
       if (filter === 'owned') return g.owned;
       if (filter === 'wishlist') return g.wishlist;
       return true;
@@ -91,6 +95,20 @@ function App() {
           {ownedCount} owned &middot; {wishlistCount} wishlisted
         </p>
       </header>
+
+      <div className="search-bar">
+        <input
+          type="text"
+          placeholder="Search games..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        {search && (
+          <button className="search-clear" onClick={() => setSearch('')} aria-label="Clear search">
+            &times;
+          </button>
+        )}
+      </div>
 
       <div className="controls">
         <div className="filters">
