@@ -1267,5 +1267,57 @@
     "players": "",
     "playTime": "",
     "onLoan": false
+  },
+  {
+    "objectId": "419720",
+    "name": "Australis",
+    "yearPublished": "2024",
+    "image": "https://cf.geekdo-images.com/9HiBaejsfSLdMyQ3qAprOg__original/img/Xm-ametVIGNVjl9ju-P3skK4EJY=/0x0/filters:format(jpeg)/pic8647670.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/9HiBaejsfSLdMyQ3qAprOg__small/img/Nnwh3ZKSAZa2u76oz1LaiM0DGjk=/fit-in/200x150/filters:strip_icc()/pic8647670.jpg",
+    "owned": false,
+    "wishlist": true,
+    "numPlays": 0,
+    "players": "",
+    "playTime": "",
+    "onLoan": false
+  },
+  {
+    "objectId": "457283",
+    "name": "Bunny Kingdom Town",
+    "yearPublished": "2026",
+    "image": "https://cf.geekdo-images.com/ah2D8LG9hfDYDcE_uy5_lw__original/img/mpwbjmFe1Ml7gZOnvOCTzPEDWcE=/0x0/filters:format(png)/pic9464958.png",
+    "thumbnail": "https://cf.geekdo-images.com/ah2D8LG9hfDYDcE_uy5_lw__small/img/NSalq5murOwkCbyLt6SAiYAkneE=/fit-in/200x150/filters:strip_icc()/pic9464958.png",
+    "owned": false,
+    "wishlist": true,
+    "numPlays": 0,
+    "players": "",
+    "playTime": "",
+    "onLoan": false
+  },
+  {
+    "objectId": "434367",
+    "name": "Nippon: Zaibatsu",
+    "yearPublished": "2026",
+    "image": "https://cf.geekdo-images.com/bOs_Um4cUUOpKnypCMykJA__original/img/RE_9_-ioTp31Fq_r5GZ_XKVGwzw=/0x0/filters:format(png)/pic8844519.png",
+    "thumbnail": "https://cf.geekdo-images.com/bOs_Um4cUUOpKnypCMykJA__small/img/WLGTv9N3yOkGWZSki-c0nc-L_oY=/fit-in/200x150/filters:strip_icc()/pic8844519.png",
+    "owned": false,
+    "wishlist": true,
+    "numPlays": 0,
+    "players": "",
+    "playTime": "",
+    "onLoan": false
+  },
+  {
+    "objectId": "438936",
+    "name": "The White Castle Duel",
+    "yearPublished": "2025",
+    "image": "https://cf.geekdo-images.com/7jnU8jv4wym7vtDG3n4xYA__original/img/OsFQPGVCVWX60IA2L6YCTW9GE_U=/0x0/filters:format(jpeg)/pic8918307.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/7jnU8jv4wym7vtDG3n4xYA__small/img/Ep_GWy6XNlBV794L3lYwcK4dqoc=/fit-in/200x150/filters:strip_icc()/pic8918307.jpg",
+    "owned": false,
+    "wishlist": true,
+    "numPlays": 0,
+    "players": "",
+    "playTime": "",
+    "onLoan": false
   }
 ]
