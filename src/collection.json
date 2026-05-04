@@ -466,8 +466,7 @@
     "numPlays": 0,
     "players": "1-5",
     "playTime": "25-45",
-    "onLoan": true,
-    "loanNote": "In Transit"
+    "onLoan": false
   },
   {
     "objectId": "266722",
@@ -636,8 +635,7 @@
     "numPlays": 0,
     "players": "2-4",
     "playTime": "60",
-    "onLoan": true,
-    "loanNote": "In Transit"
+    "onLoan": false
   },
   {
     "objectId": "14996",
@@ -742,8 +740,7 @@
     "numPlays": 0,
     "players": "2-4",
     "playTime": "20",
-    "onLoan": true,
-    "loanNote": "In Transit"
+    "onLoan": false
   },
   {
     "objectId": "256669",
@@ -992,8 +989,7 @@
     "numPlays": 4,
     "players": "2-6",
     "playTime": "20",
-    "onLoan": true,
-    "loanNote": "In Transit"
+    "onLoan": false
   },
   {
     "objectId": "435356",
@@ -1006,8 +1002,7 @@
     "numPlays": 0,
     "players": "2",
     "playTime": "15-30",
-    "onLoan": true,
-    "loanNote": "In Transit"
+    "onLoan": false
   },
   {
     "objectId": "2655",
@@ -1137,8 +1132,7 @@
     "numPlays": 0,
     "players": "2",
     "playTime": "30",
-    "onLoan": true,
-    "loanNote": "In Transit"
+    "onLoan": false
   },
   {
     "objectId": "335678",
