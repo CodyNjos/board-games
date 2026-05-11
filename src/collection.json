@@ -1434,5 +1434,31 @@
     "players": "",
     "playTime": "",
     "onLoan": false
+  },
+  {
+    "objectId": "416851",
+    "name": "Castle Combo",
+    "yearPublished": "2024",
+    "image": "https://cf.geekdo-images.com/rGomBfj0FGrZM-w3h5HFWQ__original/img/XtVFdYXLAxdGOjQOGCkrms-hLUU=/0x0/filters:format(png)/pic8250341.png",
+    "thumbnail": "https://cf.geekdo-images.com/rGomBfj0FGrZM-w3h5HFWQ__small/img/DnptKBxT6l_W2B3jGXdnEDEkDM0=/fit-in/200x150/filters:strip_icc()/pic8250341.png",
+    "owned": false,
+    "wishlist": true,
+    "numPlays": 0,
+    "players": "",
+    "playTime": "",
+    "onLoan": false
+  },
+  {
+    "objectId": "414317",
+    "name": "Harmonies",
+    "yearPublished": "2024",
+    "image": "https://cf.geekdo-images.com/A_XP2_VN3ugyqPhezowB_w__original/img/_Rv8lSr3fC1oDRkrQleQW2H2yCs=/0x0/filters:format(png)/pic8026369.png",
+    "thumbnail": "https://cf.geekdo-images.com/A_XP2_VN3ugyqPhezowB_w__small/img/ln5eKAzhse2PIHvWn7bu-jiW_uk=/fit-in/200x150/filters:strip_icc()/pic8026369.png",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 1,
+    "players": "1-4",
+    "playTime": "30-45",
+    "onLoan": false
   }
 ]
