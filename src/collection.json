@@ -1459,5 +1459,57 @@
     "players": "1-4",
     "playTime": "30-45",
     "onLoan": false
+  },
+  {
+    "objectId": "365717",
+    "name": "Clank!: Catacombs",
+    "yearPublished": "2022",
+    "image": "https://cf.geekdo-images.com/cCLn9Mvb7jRSaZzHeUXhoQ__original/img/NK4hsA9nc-kdI07hR0Nc23dL_bk=/0x0/filters:format(jpeg)/pic6937913.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/cCLn9Mvb7jRSaZzHeUXhoQ__small/img/B8BFQLR2Po3ekI_7XSG1kR9oil0=/fit-in/200x150/filters:strip_icc()/pic6937913.jpg",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "2-4",
+    "playTime": "45-90",
+    "onLoan": false
+  },
+  {
+    "objectId": "434660",
+    "name": "Coloro",
+    "yearPublished": "2025",
+    "image": "https://cf.geekdo-images.com/VgS11htuwJZeA-g6ADbA5Q__original/img/LRzrQXZtP3eT2V9wGJqDi-WNGpU=/0x0/filters:format(jpeg)/pic8953556.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/VgS11htuwJZeA-g6ADbA5Q__small/img/cvlVud32BOnkKk7MfFMCi4RPvko=/fit-in/200x150/filters:strip_icc()/pic8953556.jpg",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "2",
+    "playTime": "10-15",
+    "onLoan": false
+  },
+  {
+    "objectId": "402663",
+    "name": "Salton Sea",
+    "yearPublished": "2024",
+    "image": "https://cf.geekdo-images.com/pP4AVa3WNYvn2nWpE-Q6xw__original/img/tpe4k2kqT9AD0G7Y36Na0tHvgYI=/0x0/filters:format(png)/pic7821718.png",
+    "thumbnail": "https://cf.geekdo-images.com/pP4AVa3WNYvn2nWpE-Q6xw__small/img/dXEMvFFhoIj3QkSoK4YTCbAsJEo=/fit-in/200x150/filters:strip_icc()/pic7821718.png",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "1-4",
+    "playTime": "120",
+    "onLoan": false
+  },
+  {
+    "objectId": "338353",
+    "name": "Soda Smugglers",
+    "yearPublished": "2022",
+    "image": "https://cf.geekdo-images.com/zRdItFkzzgkuSn-Ix8PwWA__original/img/OyshAnPREylCv0ZfeYd2a7HiLS8=/0x0/filters:format(png)/pic6231245.png",
+    "thumbnail": "https://cf.geekdo-images.com/zRdItFkzzgkuSn-Ix8PwWA__small/img/-fJHCP4bCWCNrmcrWBcOKbDKaew=/fit-in/200x150/filters:strip_icc()/pic6231245.png",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "3-8",
+    "playTime": "20",
+    "onLoan": false
   }
 ]
