@@ -825,12 +825,13 @@
     "yearPublished": "2017",
     "image": "https://cf.geekdo-images.com/SbXFDTiZ5hr7hmujkoB51g__original/img/QSWHF1qRnfakxeA2cnlFLdgOI-U=/0x0/filters:format(jpeg)/pic9099559.jpg",
     "thumbnail": "https://cf.geekdo-images.com/SbXFDTiZ5hr7hmujkoB51g__small/img/hGxg7H8wTXg-Jly1C-pQVytHxPE=/fit-in/200x150/filters:strip_icc()/pic9099559.jpg",
-    "owned": false,
-    "wishlist": true,
+    "owned": true,
+    "wishlist": false,
     "numPlays": 0,
-    "players": "",
-    "playTime": "",
-    "onLoan": false
+    "players": "2",
+    "playTime": "5-20",
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "232405",
@@ -1495,5 +1496,47 @@
     "players": "3-8",
     "playTime": "20",
     "onLoan": false
+  },
+  {
+    "objectId": "24082",
+    "name": "Voltage",
+    "yearPublished": "2006",
+    "image": "https://cf.geekdo-images.com/97lCjrBj6L7wNNMHK5LhbQ__original/img/ixdtx7UW0RhwdkwjDSCUUIQiyCc=/0x0/filters:format(jpeg)/pic4222808.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/97lCjrBj6L7wNNMHK5LhbQ__small/img/wRDCmh1DAxy3DHwwnerX1zHLrQE=/fit-in/200x150/filters:strip_icc()/pic4222808.jpg",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "2",
+    "playTime": "15",
+    "onLoan": true,
+    "loanNote": "In Transit"
+  },
+  {
+    "objectId": "261490",
+    "name": "Ringo",
+    "yearPublished": "2018",
+    "image": "https://cf.geekdo-images.com/QeJLaajQ9kGtciNpYl8vAQ__original/img/AgFm2drRIspP2A2tX-z93st5xuI=/0x0/filters:format(jpeg)/pic8685271.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/QeJLaajQ9kGtciNpYl8vAQ__small/img/28sn2BudNrCt8E_RwWJsmYAdAog=/fit-in/200x150/filters:strip_icc()/pic8685271.jpg",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "2",
+    "playTime": "15",
+    "onLoan": true,
+    "loanNote": "In Transit"
+  },
+  {
+    "objectId": "321684",
+    "name": "Volterra",
+    "yearPublished": "2020",
+    "image": "https://cf.geekdo-images.com/r6YVPCs-o1-JQ7IvEceKgQ__original/img/YzIvgC9hzp_KI1ao69BqVV9B62c=/0x0/filters:format(jpeg)/pic7869693.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/r6YVPCs-o1-JQ7IvEceKgQ__small/img/jaQ4dwB4F0EUFTPt4AdW1B4-TyI=/fit-in/200x150/filters:strip_icc()/pic7869693.jpg",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "2",
+    "playTime": "20",
+    "onLoan": true,
+    "loanNote": "In Transit"
   }
 ]
