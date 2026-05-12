@@ -1311,8 +1311,7 @@
     "numPlays": 0,
     "players": "2",
     "playTime": "30",
-    "onLoan": true,
-    "loanNote": "In Transit"
+    "onLoan": false
   },
   {
     "objectId": "369880",
@@ -1325,8 +1324,7 @@
     "numPlays": 0,
     "players": "2",
     "playTime": "30-45",
-    "onLoan": true,
-    "loanNote": "In Transit"
+    "onLoan": false
   },
   {
     "objectId": "40381",
@@ -1339,8 +1337,7 @@
     "numPlays": 0,
     "players": "2-5",
     "playTime": "20-30",
-    "onLoan": true,
-    "loanNote": "In Transit"
+    "onLoan": false
   },
   {
     "objectId": "400707",
