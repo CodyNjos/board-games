@@ -1538,5 +1538,44 @@
     "playTime": "20",
     "onLoan": true,
     "loanNote": "In Transit"
+  },
+  {
+    "objectId": "424507",
+    "name": "Aspens",
+    "yearPublished": "2025",
+    "image": "https://cf.geekdo-images.com/JH00-dK1Z7C1NZCd2QJWAg__original/img/AB3FHIfc8n0a4HkMJRFy1XzNTwk=/0x0/filters:format(png)/pic8417404.png",
+    "thumbnail": "https://cf.geekdo-images.com/JH00-dK1Z7C1NZCd2QJWAg__small/img/UC--OSTQbMD8FyvRCP0qboQKKtI=/fit-in/200x150/filters:strip_icc()/pic8417404.png",
+    "owned": false,
+    "wishlist": true,
+    "numPlays": 0,
+    "players": "",
+    "playTime": "",
+    "onLoan": false
+  },
+  {
+    "objectId": "385761",
+    "name": "Faraway",
+    "yearPublished": "2023",
+    "image": "https://cf.geekdo-images.com/u1cwi9BWSKsPxSkVO0BzbA__original/img/jTY6_PRF6FrUgInfMajzobVy0S8=/0x0/filters:format(png)/pic7570101.png",
+    "thumbnail": "https://cf.geekdo-images.com/u1cwi9BWSKsPxSkVO0BzbA__small/img/5G45GN8CE7pq38fJMMocmPtV4_U=/fit-in/200x150/filters:strip_icc()/pic7570101.png",
+    "owned": false,
+    "wishlist": true,
+    "numPlays": 0,
+    "players": "",
+    "playTime": "",
+    "onLoan": false
+  },
+  {
+    "objectId": "434906",
+    "name": "Tag Team",
+    "yearPublished": "2025",
+    "image": "https://cf.geekdo-images.com/sLSlzWRe8Ixnksqawkzb3Q__original/img/EylfRGx2qLzoQ3scqz19GPQYxo0=/0x0/filters:format(jpeg)/pic8805857.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/sLSlzWRe8Ixnksqawkzb3Q__small/img/O9Kg90i8kSi8N2ndrOKXaTTrQXE=/fit-in/200x150/filters:strip_icc()/pic8805857.jpg",
+    "owned": false,
+    "wishlist": true,
+    "numPlays": 0,
+    "players": "",
+    "playTime": "",
+    "onLoan": false
   }
 ]
