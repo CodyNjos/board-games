@@ -1,0 +1,16 @@
+{
+  "name": "Cody's Collection",
+  "short_name": "Collection",
+  "description": "Board game collection tracker",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f1a",
+  "theme_color": "#0f0f1a",
+  "icons": [
+    {
+      "src": "/games.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
