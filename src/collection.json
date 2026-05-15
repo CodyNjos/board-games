@@ -1241,12 +1241,13 @@
     "yearPublished": "2023",
     "image": "https://cf.geekdo-images.com/ZaBpuleG30S1-hAmJnL4RA__original/img/V1kFJ4iZmcH94m7gNYgHvuMny0w=/0x0/filters:format(jpeg)/pic7077185.jpg",
     "thumbnail": "https://cf.geekdo-images.com/ZaBpuleG30S1-hAmJnL4RA__small/img/7AM38OD3FPy_I1Z2t8HP2GYz4WU=/fit-in/200x150/filters:strip_icc()/pic7077185.jpg",
-    "owned": false,
-    "wishlist": true,
+    "owned": true,
+    "wishlist": false,
     "numPlays": 0,
-    "players": "",
-    "playTime": "",
-    "onLoan": false
+    "players": "1-4",
+    "playTime": "45",
+    "onLoan": true,
+    "loanNote": "In Transit"
   },
   {
     "objectId": "419720",
