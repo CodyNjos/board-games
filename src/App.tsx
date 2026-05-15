@@ -92,10 +92,6 @@ function App() {
           <div className="bgg-avatar-frame">
             <img className="bgg-avatar" src="/profile/avatar.gif" alt="Cody's BGG avatar" />
           </div>
-          <div className="bgg-username-row">
-            <span className="bgg-username">PATRON</span>
-            <span className="bgg-level">26</span>
-          </div>
           <div className="bgg-microbadges">
             <img src="/profile/mb1.png" alt="microbadge" />
             <img src="/profile/mb2.gif" alt="microbadge" />
