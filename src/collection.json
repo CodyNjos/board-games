@@ -1598,5 +1598,17 @@
     "playTime": "",
     "onLoan": false
   },
+  {
+    "objectId": "405752",
+    "name": "Project L: Collector's Edition",
+    "yearPublished": "2023",
+    "image": "https://cf.geekdo-images.com/foI0HKK8XDpDX8sGmSbMLw__original/img/bAAfvpkc1hZc5j13kv_8_EpDk5Y=/0x0/filters:format(jpeg)/pic7844151.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/foI0HKK8XDpDX8sGmSbMLw__small/img/zB20AzKMOA22Hw3ecxVTmu-0wqc=/fit-in/200x150/filters:strip_icc()/pic7844151.jpg",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "",
+    "playTime": "",
+    "onLoan": false
   }
 ]
