@@ -1584,5 +1584,19 @@
     "players": "",
     "playTime": "",
     "onLoan": false
+  },
+  {
+    "objectId": "154086",
+    "name": "Gold West",
+    "yearPublished": "2015",
+    "image": "https://cf.geekdo-images.com/I46l7g9vnVL4Isq8uBeTrw__original/img/36ICElu5gPfbNo1Ub2APDCrzg9o=/0x0/filters:format(png)/pic7336167.png",
+    "thumbnail": "https://cf.geekdo-images.com/I46l7g9vnVL4Isq8uBeTrw__small/img/NwOx5NdXYaPEcFOk8gXm8Wekmqg=/fit-in/200x150/filters:strip_icc()/pic7336167.png",
+    "owned": false,
+    "wishlist": true,
+    "numPlays": 0,
+    "players": "",
+    "playTime": "",
+    "onLoan": false
+  },
   }
 ]
