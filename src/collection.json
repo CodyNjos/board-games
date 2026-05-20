@@ -1245,8 +1245,7 @@
     "numPlays": 0,
     "players": "1-4",
     "playTime": "45",
-    "onLoan": true,
-    "loanNote": "In Transit"
+    "onLoan": false
   },
   {
     "objectId": "419720",
