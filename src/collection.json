@@ -1643,11 +1643,11 @@
     "yearPublished": "2021",
     "image": "https://cf.geekdo-images.com/b7ElE00K6FojMB77rDy7cg__original/img/epKMMRAsQpT-mq7w0qbPzUb1n7o=/0x0/filters:format(jpeg)/pic5316646.jpg",
     "thumbnail": "https://cf.geekdo-images.com/b7ElE00K6FojMB77rDy7cg__small/img/LNClbXOX3nJ_M2uEgXzPFgLRso0=/fit-in/200x150/filters:strip_icc()/pic5316646.jpg",
-    "owned": false,
-    "wishlist": true,
+    "owned": true,
+    "wishlist": false,
     "numPlays": 0,
-    "players": "",
-    "playTime": "",
+    "players": "2",
+    "playTime": "30",
     "onLoan": false
   },
   {
@@ -1656,11 +1656,11 @@
     "yearPublished": "2024",
     "image": "https://cf.geekdo-images.com/dhmWaxXFrlfAt2uW8cS78Q__original/img/nOss5bKItGfeZEWd9tF702YQBhQ=/0x0/filters:format(png)/pic7851639.png",
     "thumbnail": "https://cf.geekdo-images.com/dhmWaxXFrlfAt2uW8cS78Q__small/img/vFiBdaCvAJ7nNZeIifU1HlnV9eA=/fit-in/200x150/filters:strip_icc()/pic7851639.png",
-    "owned": false,
-    "wishlist": true,
+    "owned": true,
+    "wishlist": false,
     "numPlays": 0,
-    "players": "",
-    "playTime": "",
+    "players": "2-5",
+    "playTime": "30-45",
     "onLoan": false
   },
   {
@@ -1778,6 +1778,32 @@
     "numPlays": 0,
     "players": "2",
     "playTime": "15",
+    "onLoan": false
+  },
+  {
+    "objectId": "301716",
+    "name": "Glasgow",
+    "yearPublished": "2020",
+    "image": "https://cf.geekdo-images.com/jf8tzy1AGz0hXF4_tre32A__original/img/-cPQmUylzHCkpMRh3FBDMrQbh4E=/0x0/filters:format(jpeg)/pic5413002.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/jf8tzy1AGz0hXF4_tre32A__small/img/FnYsm9_z8Q2LwC-2ZpSGr_1zyKY=/fit-in/200x150/filters:strip_icc()/pic5413002.jpg",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "2",
+    "playTime": "30",
+    "onLoan": false
+  },
+  {
+    "objectId": "373167",
+    "name": "20 Strong",
+    "yearPublished": "2023",
+    "image": "https://cf.geekdo-images.com/uqc7pY26x-oRqwHyx6iQVw__original/img/1G7JxfgE27EySTkXQiPt0M5byqQ=/0x0/filters:format(png)/pic7858263.png",
+    "thumbnail": "https://cf.geekdo-images.com/uqc7pY26x-oRqwHyx6iQVw__small/img/hxaYI3SRkmdFIeUTeJrmZ_d-gyI=/fit-in/200x150/filters:strip_icc()/pic7858263.png",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "1",
+    "playTime": "30-40",
     "onLoan": false
   }
 ]
