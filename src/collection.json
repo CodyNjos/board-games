@@ -1607,8 +1607,8 @@
     "owned": true,
     "wishlist": false,
     "numPlays": 0,
-    "players": "",
-    "playTime": "",
+    "players": "1-6",
+    "playTime": "20-40",
     "onLoan": false
   },
   {
