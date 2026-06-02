@@ -37,12 +37,20 @@ const PLAYER_OPTIONS: { label: string; value: PlayerCount }[] = [
   { label: '6+', value: 6 },
 ];
 
+const VALID_SORTS: SortBy[] = ['name', 'year', 'plays', 'playTime'];
+
 function parsePlayerCountParam(): PlayerCount {
-  const raw = new URLSearchParams(window.location.search).get('players');
+  const raw = new URLSearchParams(window.location.search).get('p');
   if (!raw) return null;
   const n = parseInt(raw, 10);
   if (n >= 1 && n <= 6) return n as PlayerCount;
   return null;
+}
+
+function parseSortParam(): SortBy {
+  const raw = new URLSearchParams(window.location.search).get('s');
+  if (raw && VALID_SORTS.includes(raw as SortBy)) return raw as SortBy;
+  return 'name';
 }
 
 function supportsPlayerCount(players: string, count: PlayerCount): boolean {
@@ -59,19 +67,27 @@ const games: BoardGame[] = collection;
 
 function App() {
   const [filter, setFilter] = useState<Filter>('owned');
-  const [sortBy, setSortBy] = useState<SortBy>('name');
+  const [sortBy, _setSortBy] = useState<SortBy>(parseSortParam);
   const [playerCount, _setPlayerCount] = useState<PlayerCount>(parsePlayerCountParam);
   const [search, setSearch] = useState('');
 
-  function updatePlayerCount(count: PlayerCount) {
-    _setPlayerCount(count);
+  function updateUrl(params: Record<string, string | null>) {
     const url = new URL(window.location.href);
-    if (count === null) {
-      url.searchParams.delete('players');
-    } else {
-      url.searchParams.set('players', String(count));
+    for (const [key, value] of Object.entries(params)) {
+      if (value === null) url.searchParams.delete(key);
+      else url.searchParams.set(key, value);
     }
     history.replaceState(null, '', url);
+  }
+
+  function updatePlayerCount(count: PlayerCount) {
+    _setPlayerCount(count);
+    updateUrl({ p: count === null ? null : String(count) });
+  }
+
+  function updateSortBy(sort: SortBy) {
+    _setSortBy(sort);
+    updateUrl({ s: sort === 'name' ? null : sort });
   }
 
   const ownedCount = games.filter((g) => g.owned).length;
@@ -162,7 +178,7 @@ function App() {
         </div>
         <div className="sort">
           <label htmlFor="sort-select">Sort by</label>
-          <select id="sort-select" value={sortBy} onChange={(e) => setSortBy(e.target.value as SortBy)}>
+          <select id="sort-select" value={sortBy} onChange={(e) => updateSortBy(e.target.value as SortBy)}>
             <option value="name">Name</option>
             <option value="year">Year (newest)</option>
             <option value="plays">Most Played</option>
