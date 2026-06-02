@@ -37,6 +37,14 @@ const PLAYER_OPTIONS: { label: string; value: PlayerCount }[] = [
   { label: '6+', value: 6 },
 ];
 
+function parsePlayerCountParam(): PlayerCount {
+  const raw = new URLSearchParams(window.location.search).get('players');
+  if (!raw) return null;
+  const n = parseInt(raw, 10);
+  if (n >= 1 && n <= 6) return n as PlayerCount;
+  return null;
+}
+
 function supportsPlayerCount(players: string, count: PlayerCount): boolean {
   if (count === null || !players) return true;
   const parts = players.split(/[-–]/);
@@ -52,8 +60,19 @@ const games: BoardGame[] = collection;
 function App() {
   const [filter, setFilter] = useState<Filter>('owned');
   const [sortBy, setSortBy] = useState<SortBy>('name');
-  const [playerCount, setPlayerCount] = useState<PlayerCount>(null);
+  const [playerCount, _setPlayerCount] = useState<PlayerCount>(parsePlayerCountParam);
   const [search, setSearch] = useState('');
+
+  function updatePlayerCount(count: PlayerCount) {
+    _setPlayerCount(count);
+    const url = new URL(window.location.href);
+    if (count === null) {
+      url.searchParams.delete('players');
+    } else {
+      url.searchParams.set('players', String(count));
+    }
+    history.replaceState(null, '', url);
+  }
 
   const ownedCount = games.filter((g) => g.owned).length;
   const wishlistCount = games.filter((g) => g.wishlist).length;
@@ -134,7 +153,7 @@ function App() {
               <button
                 key={opt.label}
                 className={playerCount === opt.value ? 'active' : ''}
-                onClick={() => setPlayerCount(opt.value)}
+                onClick={() => updatePlayerCount(opt.value)}
               >
                 {opt.label}
               </button>
