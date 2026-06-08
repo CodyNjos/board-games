@@ -95,9 +95,6 @@ function App() {
   const filteredOwnedCount = playerCount !== null
     ? games.filter((g) => g.owned && supportsPlayerCount(g.players, playerCount)).length
     : ownedCount;
-  const filteredWishlistCount = playerCount !== null
-    ? games.filter((g) => g.wishlist && supportsPlayerCount(g.players, playerCount)).length
-    : wishlistCount;
 
   const filtered = games
     .filter((g) => {
@@ -143,7 +140,7 @@ function App() {
         </a>
         <p className="stats">
           {playerCount !== null ? `${filteredOwnedCount} of ` : ''}{ownedCount} owned &middot;{' '}
-          {playerCount !== null ? `${filteredWishlistCount} of ` : ''}{wishlistCount} wishlisted
+          {wishlistCount} wishlisted
         </p>
       </header>
 
@@ -167,7 +164,7 @@ function App() {
             <button key={f} className={filter === f ? 'active' : ''} onClick={() => setFilter(f)}>
               {f === 'owned'
                 ? `Owned (${playerCount !== null ? `${filteredOwnedCount}/` : ''}${ownedCount})`
-                : `Wishlist (${playerCount !== null ? `${filteredWishlistCount}/` : ''}${wishlistCount})`}
+                : `Wishlist (${wishlistCount})`}
             </button>
           ))}
         </div>
