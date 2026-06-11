@@ -1578,12 +1578,13 @@
     "yearPublished": "2026",
     "image": "https://cf.geekdo-images.com/AXJ3ur6OZecgmPSACVm2Lw__original/img/Eu753bTK_xgrPZUkMsL76m0e8nM=/0x0/filters:format(jpeg)/pic9085223.jpg",
     "thumbnail": "https://cf.geekdo-images.com/AXJ3ur6OZecgmPSACVm2Lw__small/img/c0Y6cYn2rNN4oxcd3InUsOCxd3k=/fit-in/200x150/filters:strip_icc()/pic9085223.jpg",
-    "owned": false,
-    "wishlist": true,
+    "owned": true,
+    "wishlist": false,
     "numPlays": 0,
-    "players": "",
-    "playTime": "",
-    "onLoan": false
+    "players": "3-5",
+    "playTime": "45-90",
+    "onLoan": true,
+    "loanNote": "Pre-Ordered"
   },
   {
     "objectId": "154086",
