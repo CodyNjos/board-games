@@ -1583,8 +1583,7 @@
     "numPlays": 0,
     "players": "3-5",
     "playTime": "45-90",
-    "onLoan": true,
-    "loanNote": "Pre-Ordered"
+    "onLoan": false
   },
   {
     "objectId": "154086",
