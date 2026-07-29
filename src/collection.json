@@ -592,7 +592,7 @@
     "thumbnail": "https://cf.geekdo-images.com/T6i991w8_ccgP5s2ObEIpw__small/img/f_SDgaFFgi8PkLDvvP1o1HwbiGM=/fit-in/200x150/filters:strip_icc()/pic8548331.png",
     "owned": true,
     "wishlist": false,
-    "numPlays": 71,
+    "numPlays": 77,
     "players": "1-2",
     "playTime": "15",
     "onLoan": false
@@ -2269,7 +2269,7 @@
     "thumbnail": "https://cf.geekdo-images.com/m6Do-APgKAZXZvH5UaWoCQ__small/img/ncloDo0PHRQAp0I5N4QZp7b36MM=/fit-in/200x150/filters:strip_icc()/pic8773199.jpg",
     "owned": true,
     "wishlist": false,
-    "numPlays": 2,
+    "numPlays": 3,
     "players": "1-2",
     "playTime": "40-45",
     "onLoan": false
@@ -2594,9 +2594,35 @@
     "thumbnail": "https://cf.geekdo-images.com/cj1OiLMQ1tXF1VfuNXqDdA__small/img/KrwkqSCsQmYfVS9F_lYqUsIaHEw=/fit-in/200x150/filters:strip_icc()/pic5606668.png",
     "owned": true,
     "wishlist": false,
-    "numPlays": 2,
+    "numPlays": 3,
     "players": "2-4",
     "playTime": "10-20",
+    "onLoan": false
+  },
+  {
+    "objectId": "360471",
+    "name": "Aquamarine",
+    "yearPublished": "2022",
+    "image": "https://cf.geekdo-images.com/Tz21bWwOaJcsgUCOeP5G_Q__original/img/McGiEvDXD952_Jf_BPGsaDBqmUQ=/0x0/filters:format(png)/pic6983965.png",
+    "thumbnail": "https://cf.geekdo-images.com/Tz21bWwOaJcsgUCOeP5G_Q__small/img/JXo6jQvE34-5f-fs2LE7Zhd43-4=/fit-in/200x150/filters:strip_icc()/pic6983965.png",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "1-100",
+    "playTime": "20-30",
+    "onLoan": false
+  },
+  {
+    "objectId": "350736",
+    "name": "Voyages",
+    "yearPublished": "2021",
+    "image": "https://cf.geekdo-images.com/wWfxgHVyho1j4OcVRf7B0g__original/img/UzQ_mG6KBd68XNMzvUGSJRKI09o=/0x0/filters:format(png)/pic6665090.png",
+    "thumbnail": "https://cf.geekdo-images.com/wWfxgHVyho1j4OcVRf7B0g__small/img/_uSSmxK_aSCiRsSjQLt-4GpY9ng=/fit-in/200x150/filters:strip_icc()/pic6665090.png",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "1-100",
+    "playTime": "20-30",
     "onLoan": false
   }
 ]
