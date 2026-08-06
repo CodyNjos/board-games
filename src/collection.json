@@ -1762,7 +1762,7 @@
     "thumbnail": "https://cf.geekdo-images.com/poXMN-mYIz2J6WV21m3Q7g__small/img/DIeVsVC5n2bL1M0wOCrdmScO3MU=/fit-in/200x150/filters:strip_icc()/pic9149601.jpg",
     "owned": true,
     "wishlist": false,
-    "numPlays": 2,
+    "numPlays": 3,
     "players": "2",
     "playTime": "30",
     "onLoan": false
@@ -2527,7 +2527,7 @@
     "yearPublished": "2024",
     "image": "https://cf.geekdo-images.com/X-YC018bBn2N934_W9zSBg__original/img/ZGmGvfifyhj04cJHtAhRZDHW82o=/0x0/filters:format(jpeg)/pic8445096.jpg",
     "thumbnail": "https://cf.geekdo-images.com/X-YC018bBn2N934_W9zSBg__small/img/4dXbirAH6GVL02KXlxDCXG0h4Wk=/fit-in/200x150/filters:strip_icc()/pic8445096.jpg",
-    "owned": false,
+    "owned": true,
     "wishlist": false,
     "numPlays": 0,
     "players": "2-5",
@@ -2636,6 +2636,32 @@
     "numPlays": 0,
     "players": "",
     "playTime": "",
+    "onLoan": false
+  },
+  {
+    "objectId": "14781",
+    "name": "Dr\u00f4les de Z\u00e8bres",
+    "yearPublished": "2025",
+    "image": "https://cf.geekdo-images.com/dkfJ7bYK_CR_NrNWvBL19w__original/img/1kQwoBVQYcmPmXsMrZmxkuUv_3w=/0x0/filters:format(png)/pic9293670.png",
+    "thumbnail": "https://cf.geekdo-images.com/dkfJ7bYK_CR_NrNWvBL19w__small/img/IhO4a3_tZcxk52qQoo1JuHFSSjE=/fit-in/200x150/filters:strip_icc()/pic9293670.png",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 15,
+    "players": "2",
+    "playTime": "20",
+    "onLoan": false
+  },
+  {
+    "objectId": "473242",
+    "name": "Master of Coin",
+    "yearPublished": "2026",
+    "image": "https://cf.geekdo-images.com/_Sbr456_USczSvXAecdR3Q__original/img/0l7_9Z-XgbyeF3lXCMPDFO7g56I=/0x0/filters:format(jpeg)/pic9649121.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/_Sbr456_USczSvXAecdR3Q__small/img/-qWdscnIxSIZGm98oIGsf6d7OG8=/fit-in/200x150/filters:strip_icc()/pic9649121.jpg",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "1-100",
+    "playTime": "30",
     "onLoan": false
   }
 ]
