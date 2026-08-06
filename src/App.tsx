@@ -21,6 +21,7 @@ interface BoardGame {
   playTime: string;
   onLoan: boolean;
   loanNote?: string;
+  note?: string;
 }
 
 type Filter = 'all' | 'owned' | 'wishlist';
@@ -210,6 +211,7 @@ function App() {
                 </span>
               )}
               {game.wishlist && <span className="badge wishlist-badge">Wishlist</span>}
+              {game.note && <span className="badge note-badge">{game.note}</span>}
               {game.numPlays > 0 && (
                 <span className="badge plays-badge">
                   {game.numPlays} play{game.numPlays !== 1 ? 's' : ''}

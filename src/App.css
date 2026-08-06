@@ -295,6 +295,13 @@ header {
   color: var(--bg);
 }
 
+.note-badge {
+  bottom: 0.5rem;
+  left: 0.5rem;
+  background: #2980b9;
+  color: #fff;
+}
+
 .card-info {
   padding: 0.85rem 1rem 1rem;
 }
