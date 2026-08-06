@@ -2610,7 +2610,8 @@
     "numPlays": 5,
     "players": "1-100",
     "playTime": "20-30",
-    "onLoan": false
+    "onLoan": false,
+    "note": "Print & Play"
   },
   {
     "objectId": "350736",
@@ -2623,7 +2624,8 @@
     "numPlays": 0,
     "players": "1-100",
     "playTime": "20-30",
-    "onLoan": false
+    "onLoan": false,
+    "note": "Print & Play"
   },
   {
     "objectId": "437119",
@@ -2649,7 +2651,8 @@
     "numPlays": 15,
     "players": "2",
     "playTime": "20",
-    "onLoan": false
+    "onLoan": false,
+    "note": "Print & Play"
   },
   {
     "objectId": "473242",
