@@ -2662,6 +2662,7 @@
     "numPlays": 0,
     "players": "1-100",
     "playTime": "30",
-    "onLoan": false
+    "onLoan": true,
+    "loanNote": "Print & Play"
   }
 ]
