@@ -397,7 +397,7 @@
     "thumbnail": "https://cf.geekdo-images.com/wLW7pFn0--20lEizEz5p3A__imagepage/img/qDuX2TRjK3utCghPRUfrG42fcFk=/fit-in/900x600/filters:no_upscale():strip_icc()/pic2270442.jpg",
     "owned": true,
     "wishlist": false,
-    "numPlays": 49,
+    "numPlays": 50,
     "players": "2",
     "playTime": "15-30",
     "onLoan": false
@@ -592,7 +592,7 @@
     "thumbnail": "https://cf.geekdo-images.com/T6i991w8_ccgP5s2ObEIpw__small/img/f_SDgaFFgi8PkLDvvP1o1HwbiGM=/fit-in/200x150/filters:strip_icc()/pic8548331.png",
     "owned": true,
     "wishlist": false,
-    "numPlays": 93,
+    "numPlays": 99,
     "players": "1-2",
     "playTime": "15",
     "onLoan": false
@@ -722,7 +722,7 @@
     "thumbnail": "https://cf.geekdo-images.com/3ue_3La0WYopTSDER3shUA__small/img/4SreytxNoZL435EkTriKB08W5W0=/fit-in/200x150/filters:strip_icc()/pic8389014.jpg",
     "owned": true,
     "wishlist": false,
-    "numPlays": 1,
+    "numPlays": 2,
     "players": "1-4",
     "playTime": "40-80",
     "onLoan": false
@@ -735,7 +735,7 @@
     "thumbnail": "https://cf.geekdo-images.com/665Ply7Ho1WVf1v1iZlWeg__small/img/BKnSb6kAhpVFHV8cyUXrs3EF_dw=/fit-in/200x150/filters:strip_icc()/pic3283110.png",
     "owned": true,
     "wishlist": false,
-    "numPlays": 6,
+    "numPlays": 7,
     "players": "2-4",
     "playTime": "20",
     "onLoan": false
@@ -1567,7 +1567,7 @@
     "thumbnail": "https://cf.geekdo-images.com/sLSlzWRe8Ixnksqawkzb3Q__small/img/O9Kg90i8kSi8N2ndrOKXaTTrQXE=/fit-in/200x150/filters:strip_icc()/pic8805857.jpg",
     "owned": true,
     "wishlist": false,
-    "numPlays": 0,
+    "numPlays": 1,
     "players": "2",
     "playTime": "15",
     "onLoan": false
@@ -1762,7 +1762,7 @@
     "thumbnail": "https://cf.geekdo-images.com/poXMN-mYIz2J6WV21m3Q7g__small/img/DIeVsVC5n2bL1M0wOCrdmScO3MU=/fit-in/200x150/filters:strip_icc()/pic9149601.jpg",
     "owned": true,
     "wishlist": false,
-    "numPlays": 3,
+    "numPlays": 4,
     "players": "2",
     "playTime": "30",
     "onLoan": false
@@ -1853,7 +1853,7 @@
     "thumbnail": "https://cf.geekdo-images.com/T-eq9Ux4gkmqfEXry8HC1w__small/img/6OG1_bmI_3NkAeD-IT9dJnFHmmc=/fit-in/200x150/filters:strip_icc()/pic9018430.jpg",
     "owned": true,
     "wishlist": false,
-    "numPlays": 0,
+    "numPlays": 1,
     "players": "1-4",
     "playTime": "25-30",
     "onLoan": false
@@ -2386,7 +2386,7 @@
     "thumbnail": "https://cf.geekdo-images.com/7pagzXgcKlDufhygCJpx4A__small/img/dTP48HpQH_wjZYLzKldliQmpyQM=/fit-in/200x150/filters:strip_icc()/pic8337477.png",
     "owned": true,
     "wishlist": false,
-    "numPlays": 1,
+    "numPlays": 3,
     "players": "2-3",
     "playTime": "5-10",
     "onLoan": false
@@ -2594,7 +2594,7 @@
     "thumbnail": "https://cf.geekdo-images.com/cj1OiLMQ1tXF1VfuNXqDdA__small/img/KrwkqSCsQmYfVS9F_lYqUsIaHEw=/fit-in/200x150/filters:strip_icc()/pic5606668.png",
     "owned": true,
     "wishlist": false,
-    "numPlays": 5,
+    "numPlays": 6,
     "players": "2-4",
     "playTime": "10-20",
     "onLoan": false
@@ -2648,7 +2648,7 @@
     "thumbnail": "https://cf.geekdo-images.com/dkfJ7bYK_CR_NrNWvBL19w__small/img/IhO4a3_tZcxk52qQoo1JuHFSSjE=/fit-in/200x150/filters:strip_icc()/pic9293670.png",
     "owned": true,
     "wishlist": false,
-    "numPlays": 19,
+    "numPlays": 22,
     "players": "2",
     "playTime": "20",
     "onLoan": false,
@@ -2709,5 +2709,18 @@
     "playTime": "30-45",
     "onLoan": false,
     "note": "Print & Play"
+  },
+  {
+    "objectId": "420087",
+    "name": "Flip 7",
+    "yearPublished": "2024",
+    "image": "https://cf.geekdo-images.com/YrQxEB9Ef0kQorRApzG5vQ__original/img/hK6k-x_GYfooemrkkRuF0bTvKxE=/0x0/filters:format(jpeg)/pic8780246.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/YrQxEB9Ef0kQorRApzG5vQ__small/img/_dNNsSelyw9qUEOIXBRt6PE_1us=/fit-in/200x150/filters:strip_icc()/pic8780246.jpg",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 1,
+    "players": "3-18",
+    "playTime": "20",
+    "onLoan": false
   }
 ]
