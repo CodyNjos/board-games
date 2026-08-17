@@ -2,31 +2,27 @@
 //   https://api.geekdo.com/api/geekitems?objectid=<BGG_ID>&objecttype=thing
 // Returns a single game's metadata as JSON. Used to populate entries in
 // collection.json — fields mapped: objectid, yearpublished, minplayers/
-// maxplayers, minplaytime/maxplaytime, imageurl (image), images.thumb
-// (thumbnail). The xmlapi2 collection endpoint (requires auth since Jul 2025):
+// maxplayers, minplaytime/maxplaytime, images.original (image), images.thumb
+// (thumbnail), and links.expandsboardgame (expansionOf). The xmlapi2
+// collection endpoint (requires auth since Jul 2025):
 //   https://boardgamegeek.com/xmlapi2/collection?username=pancreass
-import { useState } from 'react';
+// Full field mapping and the expansion model: docs/collection-data.md
+import { useEffect, useMemo, useState } from 'react';
 import collection from './collection.json';
-
-interface BoardGame {
-  objectId: string;
-  name: string;
-  yearPublished: string;
-  image: string;
-  thumbnail: string;
-  owned: boolean;
-  wishlist: boolean;
-  numPlays: number;
-  players: string;
-  playTime: string;
-  onLoan: boolean;
-  loanNote?: string;
-  note?: string;
-}
+import GameDetail from './GameDetail';
+import {
+  BoardGame,
+  PlayerCount,
+  effectivePlayerRange,
+  formatPlayerLabel,
+  groupExpansions,
+  isExpansion,
+  matchExpansionName,
+  supportsPlayerCount,
+} from './grouping';
 
 type Filter = 'all' | 'owned' | 'wishlist';
 type SortBy = 'name' | 'year' | 'plays' | 'playTime';
-type PlayerCount = null | 1 | 2 | 3 | 4 | 5 | 6;
 
 const PLAYER_OPTIONS: { label: string; value: PlayerCount }[] = [
   { label: 'Any', value: null },
@@ -54,23 +50,25 @@ function parseSortParam(): SortBy {
   return 'name';
 }
 
-function supportsPlayerCount(players: string, count: PlayerCount): boolean {
-  if (count === null || !players) return true;
-  const parts = players.split(/[-–]/);
-  const min = parseInt(parts[0], 10);
-  const max = parts.length > 1 ? parseInt(parts[1], 10) : min;
-  if (isNaN(min)) return true;
-  if (count === 6) return max >= 6;
-  return count >= min && count <= max;
+function parseGameParam(): string | null {
+  return new URLSearchParams(window.location.search).get('g');
 }
 
 const games: BoardGame[] = collection;
+const expansionsByBase = groupExpansions(games);
+const baseGames = games.filter((g) => !isExpansion(g));
+const expansionCount = games.length - baseGames.length;
+
+function expansionsOf(objectId: string): BoardGame[] {
+  return expansionsByBase.get(objectId) ?? [];
+}
 
 function App() {
   const [filter, setFilter] = useState<Filter>('owned');
   const [sortBy, _setSortBy] = useState<SortBy>(parseSortParam);
   const [playerCount, _setPlayerCount] = useState<PlayerCount>(parsePlayerCountParam);
   const [search, setSearch] = useState('');
+  const [selectedId, setSelectedId] = useState<string | null>(parseGameParam);
 
   function updateUrl(params: Record<string, string | null>) {
     const url = new URL(window.location.href);
@@ -91,22 +89,60 @@ function App() {
     updateUrl({ s: sort === 'name' ? null : sort });
   }
 
-  const ownedCount = games.filter((g) => g.owned).length;
-  const wishlistCount = games.filter((g) => g.wishlist).length;
+  // The panel gets a real history entry (unlike the filters, which replace
+  // state) so browser back closes it instead of leaving the site.
+  function openGame(objectId: string) {
+    const url = new URL(window.location.href);
+    url.searchParams.set('g', objectId);
+    history.pushState(null, '', url);
+    setSelectedId(objectId);
+  }
+
+  function closeGame() {
+    if (parseGameParam() !== null) history.back();
+    else setSelectedId(null);
+  }
+
+  useEffect(() => {
+    function onPopState() {
+      setSelectedId(parseGameParam());
+    }
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
+
+  // Ranges are derived per base game and reused by both the filter and the
+  // card, so the widened "3-6" a card shows is the one it was filtered on.
+  const ranges = useMemo(
+    () =>
+      new Map(
+        baseGames.map((g) => [g.objectId, effectivePlayerRange(g, expansionsOf(g.objectId))]),
+      ),
+    [],
+  );
+
+  const ownedCount = baseGames.filter((g) => g.owned).length;
+  const wishlistCount = baseGames.filter((g) => g.wishlist).length;
   const filteredOwnedCount = playerCount !== null
-    ? games.filter((g) => g.owned && supportsPlayerCount(g.players, playerCount)).length
+    ? baseGames.filter(
+        (g) => g.owned && supportsPlayerCount(ranges.get(g.objectId) ?? null, playerCount),
+      ).length
     : ownedCount;
 
-  const filtered = games
+  const filtered = baseGames
     .filter((g) => {
       if (search) {
-        return g.name.toLowerCase().includes(search.toLowerCase());
+        const needle = search.toLowerCase();
+        return (
+          g.name.toLowerCase().includes(needle) ||
+          matchExpansionName(expansionsOf(g.objectId), needle) !== null
+        );
       }
       if (filter === 'owned') return g.owned;
       if (filter === 'wishlist') return g.wishlist;
       return true;
     })
-    .filter((g) => supportsPlayerCount(g.players, playerCount))
+    .filter((g) => supportsPlayerCount(ranges.get(g.objectId) ?? null, playerCount))
     .sort((a, b) => {
       if (sortBy === 'year') return b.yearPublished.localeCompare(a.yearPublished);
       if (sortBy === 'plays') return b.numPlays - a.numPlays;
@@ -117,6 +153,10 @@ function App() {
       }
       return a.name.localeCompare(b.name);
     });
+
+  const selected = selectedId !== null
+    ? baseGames.find((g) => g.objectId === selectedId) ?? null
+    : null;
 
   return (
     <div className="app">
@@ -141,7 +181,7 @@ function App() {
         </a>
         <p className="stats">
           {playerCount !== null ? `${filteredOwnedCount} of ` : ''}{ownedCount} owned &middot;{' '}
-          {wishlistCount} wishlisted
+          {expansionCount} expansions &middot; {wishlistCount} wishlisted
         </p>
       </header>
 
@@ -195,40 +235,61 @@ function App() {
       </div>
 
       <div className="grid">
-        {filtered.map((game) => (
-          <a
-            key={game.objectId}
-            className="card"
-            href={`https://boardgamegeek.com/boardgame/${game.objectId}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="card-image">
-              <img src={game.image} alt={game.name} loading="lazy" />
-              {game.onLoan && (
-                <span className="badge loan-badge" title={game.loanNote || undefined}>
-                  Out
-                </span>
-              )}
-              {game.wishlist && <span className="badge wishlist-badge">Wishlist</span>}
-              {game.note && <span className="badge note-badge">{game.note}</span>}
-              {game.numPlays > 0 && (
-                <span className="badge plays-badge">
-                  {game.numPlays} play{game.numPlays !== 1 ? 's' : ''}
-                </span>
-              )}
-            </div>
-            <div className="card-info">
-              <h2>{game.name}</h2>
-              <span className="year">{game.yearPublished}</span>
-              <div className="meta">
-                {game.players && <span>{game.players} players</span>}
-                {game.playTime && <span>{game.playTime} min</span>}
+        {filtered.map((game) => {
+          const expansions = expansionsOf(game.objectId);
+          const matchedExpansion = search ? matchExpansionName(expansions, search) : null;
+          const showsMatch = matchedExpansion !== null
+            && !game.name.toLowerCase().includes(search.toLowerCase());
+          return (
+            <button
+              key={game.objectId}
+              className="card"
+              onClick={() => openGame(game.objectId)}
+              aria-label={`${game.name} details`}
+            >
+              <div className="card-image">
+                <img src={game.image} alt={game.name} loading="lazy" />
+                {game.onLoan && (
+                  <span className="badge loan-badge" title={game.loanNote || undefined}>
+                    Out
+                  </span>
+                )}
+                {game.wishlist && <span className="badge wishlist-badge">Wishlist</span>}
+                {game.note && <span className="badge note-badge">{game.note}</span>}
+                {game.numPlays > 0 && (
+                  <span className="badge plays-badge">
+                    {game.numPlays} play{game.numPlays !== 1 ? 's' : ''}
+                  </span>
+                )}
+                {expansions.length > 0 && (
+                  <span className="badge expansion-badge">
+                    +{expansions.length} expansion{expansions.length !== 1 ? 's' : ''}
+                  </span>
+                )}
               </div>
-            </div>
-          </a>
-        ))}
+              <div className="card-info">
+                <h2>{game.name}</h2>
+                <span className="year">{game.yearPublished}</span>
+                <div className="meta">
+                  {formatPlayerLabel(ranges.get(game.objectId) ?? null) && (
+                    <span>{formatPlayerLabel(ranges.get(game.objectId) ?? null)}</span>
+                  )}
+                  {game.playTime && <span>{game.playTime} min</span>}
+                </div>
+                {showsMatch && <div className="card-match">matched: {matchedExpansion}</div>}
+              </div>
+            </button>
+          );
+        })}
       </div>
+
+      {selected && (
+        <GameDetail
+          game={selected}
+          expansions={expansionsOf(selected.objectId)}
+          onClose={closeGame}
+        />
+      )}
     </div>
   );
 }

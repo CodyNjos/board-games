@@ -241,6 +241,18 @@ header {
   color: inherit;
   border: 1px solid var(--border);
   transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  /* A button, not a link, since it opens the detail panel rather than BGG. */
+  display: block;
+  width: 100%;
+  padding: 0;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .card:hover {
@@ -302,6 +314,15 @@ header {
   color: #fff;
 }
 
+.expansion-badge {
+  bottom: 0.5rem;
+  right: 0.5rem;
+  background: var(--surface-hover);
+  color: var(--text);
+  border: 1px solid var(--border);
+  white-space: nowrap;
+}
+
 .card-info {
   padding: 0.85rem 1rem 1rem;
 }
@@ -323,6 +344,203 @@ header {
   margin-top: 0.5rem;
   font-size: 0.78rem;
   color: var(--text-muted);
+}
+
+.card-match {
+  margin-top: 0.4rem;
+  font-size: 0.72rem;
+  color: var(--accent);
+}
+
+/* Detail panel */
+.detail-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.detail-panel {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  max-width: 520px;
+  width: 100%;
+  overflow: hidden;
+  outline: none;
+}
+
+.detail-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 1;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--text);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.detail-close:hover {
+  background: rgba(0, 0, 0, 0.85);
+  color: var(--accent);
+}
+
+.detail-hero {
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 260px;
+}
+
+.detail-hero img {
+  max-width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+}
+
+.detail-body {
+  padding: 1.25rem;
+}
+
+.detail-body h2 {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  margin-bottom: 0.15rem;
+}
+
+.detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.detail-widened {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.detail-note,
+.detail-loan {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.detail-loan {
+  color: #e8834a;
+}
+
+.detail-expansions {
+  margin-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+
+.detail-expansions h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+/* "Plays" sits over the per-expansion count column, so its right padding
+   matches the row padding below it. */
+.detail-expansions-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+  padding-right: 0.5rem;
+}
+
+.expansion-plays-label {
+  flex-shrink: 0;
+}
+
+.detail-expansions ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.detail-expansions a {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s;
+}
+
+.detail-expansions a:hover {
+  background: var(--surface-hover);
+}
+
+.detail-expansions img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  background: #111;
+  flex-shrink: 0;
+}
+
+.expansion-name {
+  flex: 1;
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+
+.expansion-tag {
+  margin-left: 0.4rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 1rem;
+  background: #c0392b;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.expansion-plays {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  min-width: 1.5rem;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.detail-bgg-link {
+  display: block;
+  margin-top: 1.25rem;
+  text-align: center;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  background: var(--accent);
+  color: var(--bg);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
 /* Loading & error states */
@@ -387,5 +605,9 @@ header {
 
   .sort {
     justify-content: center;
+  }
+
+  .detail-backdrop {
+    padding: 1rem 0.5rem;
   }
 }

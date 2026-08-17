@@ -114,7 +114,8 @@
     "numPlays": 0,
     "players": "5-6",
     "playTime": "120",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["13"]
   },
   {
     "objectId": "358278",
@@ -517,7 +518,8 @@
     "numPlays": 0,
     "players": "2-12",
     "playTime": "45",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["9220"]
   },
   {
     "objectId": "168215",
@@ -569,7 +571,8 @@
     "numPlays": 1,
     "players": "5-6",
     "playTime": "20-40",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["199561"]
   },
   {
     "objectId": "373106",
@@ -1713,7 +1716,8 @@
     "numPlays": 0,
     "players": "1",
     "playTime": "40-60",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["373167", "432950"]
   },
   {
     "objectId": "424850",
@@ -1726,7 +1730,8 @@
     "numPlays": 0,
     "players": "1",
     "playTime": "40-60",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["373167", "432950"]
   },
   {
     "objectId": "329082",
@@ -1947,7 +1952,8 @@
     "numPlays": 1,
     "players": "1-4",
     "playTime": "15-30",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["245654", "251678", "306881", "306882"]
   },
   {
     "objectId": "320734",
@@ -1960,7 +1966,8 @@
     "numPlays": 2,
     "players": "1-4",
     "playTime": "15-30",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["245654", "251678", "306881", "306882"]
   },
   {
     "objectId": "320735",
@@ -1973,7 +1980,8 @@
     "numPlays": 4,
     "players": "1-4",
     "playTime": "15-30",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["245654", "251678", "306881", "306882"]
   },
   {
     "objectId": "306882",
@@ -1999,7 +2007,8 @@
     "numPlays": 4,
     "players": "1-4",
     "playTime": "15-30",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["245654", "251678", "306881", "306882"]
   },
   {
     "objectId": "306881",
@@ -2025,7 +2034,8 @@
     "numPlays": 0,
     "players": "1",
     "playTime": "15-30",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["306881", "306882"]
   },
   {
     "objectId": "357311",
@@ -2038,7 +2048,8 @@
     "numPlays": 0,
     "players": "1-6",
     "playTime": "20-30",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["245654", "251678", "306881", "306882"]
   },
   {
     "objectId": "320731",
@@ -2051,7 +2062,8 @@
     "numPlays": 0,
     "players": "1-4",
     "playTime": "15-30",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["245654", "251678", "306881", "306882"]
   },
   {
     "objectId": "320730",
@@ -2064,7 +2076,8 @@
     "numPlays": 0,
     "players": "1-4",
     "playTime": "15-30",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["245654", "251678", "306881", "306882"]
   },
   {
     "objectId": "320732",
@@ -2077,7 +2090,8 @@
     "numPlays": 0,
     "players": "1-4",
     "playTime": "15-30",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["245654", "251678", "306881", "306882"]
   },
   {
     "objectId": "428538",
@@ -2129,7 +2143,8 @@
     "numPlays": 0,
     "players": "3-5",
     "playTime": "45-90",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["453740"]
   },
   {
     "objectId": "400945",
@@ -2142,7 +2157,8 @@
     "numPlays": 0,
     "players": "1-4",
     "playTime": "15-30",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["245654", "251678", "306881", "306882"]
   },
   {
     "objectId": "339247",
@@ -2155,7 +2171,8 @@
     "numPlays": 0,
     "players": "1-4",
     "playTime": "",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["306881", "306882"]
   },
   {
     "objectId": "263963",
@@ -2168,7 +2185,8 @@
     "numPlays": 0,
     "players": "1-7",
     "playTime": "20-30",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["245654", "251678"]
   },
   {
     "objectId": "263964",
@@ -2181,7 +2199,8 @@
     "numPlays": 0,
     "players": "1-4",
     "playTime": "15-30",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["245654", "251678"]
   },
   {
     "objectId": "256967",
@@ -2220,7 +2239,8 @@
     "numPlays": 0,
     "players": "1",
     "playTime": "30-45",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["373167", "432950"]
   },
   {
     "objectId": "244522",
@@ -2454,7 +2474,8 @@
     "numPlays": 0,
     "players": "2-5",
     "playTime": "120",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["167791"]
   },
   {
     "objectId": "358738",
@@ -2467,7 +2488,8 @@
     "numPlays": 0,
     "players": "1-5",
     "playTime": "90-120",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["328871"]
   },
   {
     "objectId": "344634",
@@ -2480,7 +2502,8 @@
     "numPlays": 3,
     "players": "1-4",
     "playTime": "45-60",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["328871"]
   },
   {
     "objectId": "255681",
@@ -2493,7 +2516,8 @@
     "numPlays": 0,
     "players": "1-5",
     "playTime": "120",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["167791"]
   },
   {
     "objectId": "218127",
@@ -2506,7 +2530,8 @@
     "numPlays": 0,
     "players": "1-5",
     "playTime": "90-120",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["167791"]
   },
   {
     "objectId": "247030",
@@ -2519,7 +2544,8 @@
     "numPlays": 0,
     "players": "1-5",
     "playTime": "90-120",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["167791"]
   },
   {
     "objectId": "428511",
@@ -2532,7 +2558,8 @@
     "numPlays": 0,
     "players": "2-5",
     "playTime": "90-120",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["167791"]
   },
   {
     "objectId": "231965",
@@ -2545,7 +2572,8 @@
     "numPlays": 0,
     "players": "1-5",
     "playTime": "90-120",
-    "onLoan": false
+    "onLoan": false,
+    "expansionOf": ["167791"]
   },
   {
     "objectId": "233867",
