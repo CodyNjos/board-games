@@ -3,8 +3,8 @@
 `src/collection.json` is the whole database: a flat array of entries, hand-maintained
 with help from the BGG API. There is no backend — Vite imports the JSON at build time.
 
-As of 2026-08-17: **212 entries** — 184 base games (156 owned, 28 wishlisted) and
-28 expansions.
+As of 2026-09-16: **215 entries** — 186 base games (158 owned, 28 wishlisted) and
+29 expansions.
 
 ## Entry shape
 
@@ -79,14 +79,37 @@ so **any refresh must preserve them** rather than rebuilding entries wholesale.
 
 Diff the export against the file rather than overwriting: match on `objectId`, apply
 only `owned` / `wishlist` / `numPlays`, append entries whose `objectId` is new, and
-report anything the export dropped. Watch for two traps:
+report anything the export dropped. Watch for three traps:
 
+- **The export can list one `objectId` twice.** Owning two versions of a game gives
+  two `<item>` rows sharing a thing id — the second carries an `<originalname>` and
+  repeats the same `numplays`, because plays are logged against the thing, not the
+  version. `objectId` is the primary key here, so the extra row must be skipped, not
+  appended. As of 2026-09-16 this affects `163412`, listed as both `Patchwork` and
+  `Patchwork: Americana Edition`. Representing owned versions separately would need
+  a different key.
 - BGG **renames** games, and `collection.json` will still hold the old title —
-  `objectId` is the key, never the name. As of the 2026-08-17 export, BGG had
+  `objectId` is the key, never the name. As of the 2026-09-16 export, BGG had
   `46614` as `Triplo` (recorded here as `Nonaga`) and `266524` as `Parks` (recorded
   as `PARKS`); both are intentionally left alone.
 - New entries still need `expansionOf` decided — check `subtypes` for
-  `boardgameexpansion` before assuming a game is a base game.
+  `boardgameexpansion` before assuming a game is a base game. Don't infer the parent
+  from a sibling: the Tanglewoods decks expand both `20 Strong` and
+  `20 Strong: Tanglewoods`, but `20 Strong: Solar Sentinels` expands only `20 Strong`.
+
+The export is also not a complete source for a new entry. It omits `<yearpublished>`
+and `<comment>` on some items, and where its `<yearpublished>` differs from the API
+it is the *version* year, not the game's: it lists `Machi Koro` (`143884`) as 2019,
+the anniversary edition owned here, while the game is 2012. `yearPublished` records
+the **game**, so 2012 is correct and the 2019 is deliberately not used.
+
+Take `yearPublished` / `players` / `playTime` from the geekitems endpoint, fall back
+to the comment when the API has nothing, and hand-enter what neither has.
+`SCHEELSopoly` (`100690`) needs all three routes: BGG gives it no year and a
+playtime of 0, so its `playTime` of `60` comes from the comment and its
+`yearPublished` of `2010` was supplied by hand. **A refresh must not overwrite
+hand-entered values** — this is why the sync touches only `owned` / `wishlist` /
+`numPlays` on entries that already exist.
 
 ## How expansions work
 
@@ -121,8 +144,8 @@ declines to flag things that merely look like expansions.
   those of the expansions you **own** — owning `Catan: 5-6 Player Expansion` makes
   Catan a 3–6 player game for filtering and display. Wishlisted expansions don't
   count; you can't play with a box you don't have.
-- **Header counts exclude expansions**, which is why it reads `156 owned` and not
-  `184`. The expansion total is shown as its own figure.
+- **Header counts exclude expansions**, which is why it reads `158 owned` and not
+  `186`. The expansion total is shown as its own figure.
 - **Search matches expansion names** and surfaces the base card with a `matched: …`
   line explaining why it appeared.
 

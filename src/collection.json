@@ -595,7 +595,7 @@
     "thumbnail": "https://cf.geekdo-images.com/T6i991w8_ccgP5s2ObEIpw__small/img/f_SDgaFFgi8PkLDvvP1o1HwbiGM=/fit-in/200x150/filters:strip_icc()/pic8548331.png",
     "owned": true,
     "wishlist": false,
-    "numPlays": 106,
+    "numPlays": 109,
     "players": "1-2",
     "playTime": "15",
     "onLoan": false
@@ -1648,7 +1648,7 @@
     "thumbnail": "https://cf.geekdo-images.com/b7ElE00K6FojMB77rDy7cg__small/img/LNClbXOX3nJ_M2uEgXzPFgLRso0=/fit-in/200x150/filters:strip_icc()/pic5316646.jpg",
     "owned": true,
     "wishlist": false,
-    "numPlays": 0,
+    "numPlays": 1,
     "players": "2",
     "playTime": "30",
     "onLoan": false
@@ -1767,7 +1767,7 @@
     "thumbnail": "https://cf.geekdo-images.com/poXMN-mYIz2J6WV21m3Q7g__small/img/DIeVsVC5n2bL1M0wOCrdmScO3MU=/fit-in/200x150/filters:strip_icc()/pic9149601.jpg",
     "owned": true,
     "wishlist": false,
-    "numPlays": 5,
+    "numPlays": 7,
     "players": "2",
     "playTime": "30",
     "onLoan": false
@@ -2788,6 +2788,46 @@
     "numPlays": 0,
     "players": "2-5",
     "playTime": "30-45",
+    "onLoan": false
+  },
+  {
+    "objectId": "472084",
+    "name": "20 Strong: Solar Sentinels",
+    "yearPublished": "2023",
+    "image": "https://cf.geekdo-images.com/CRlL9qc5KDb4zb_nlStTSw__original/img/_HR_HvBFTEsrOGfe96DSZckIw1k=/0x0/filters:format(png)/pic9800189.png",
+    "thumbnail": "https://cf.geekdo-images.com/CRlL9qc5KDb4zb_nlStTSw__small/img/71PjRgqCPx5ro56EWBRtMk7ZYvU=/fit-in/200x150/filters:strip_icc()/pic9800189.png",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "1",
+    "playTime": "30-45",
+    "onLoan": false,
+    "expansionOf": ["373167"]
+  },
+  {
+    "objectId": "143884",
+    "name": "Machi Koro",
+    "yearPublished": "2012",
+    "image": "https://cf.geekdo-images.com/_lI2eUDHfesfe5SswJiFAg__original/img/H4XHVffQ4SOxgWoG396I9LUrwg8=/0x0/filters:format(png)/pic4783831.png",
+    "thumbnail": "https://cf.geekdo-images.com/_lI2eUDHfesfe5SswJiFAg__small/img/tCTP0XMMmsAfNqzb0iYmp0b-YUc=/fit-in/200x150/filters:strip_icc()/pic4783831.png",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 3,
+    "players": "2-4",
+    "playTime": "30",
+    "onLoan": false
+  },
+  {
+    "objectId": "100690",
+    "name": "SCHEELSopoly",
+    "yearPublished": "2010",
+    "image": "https://cf.geekdo-images.com/J8xEJa63B--mvnIcXpJpgw__original/img/Gv_VfsEJEQ_tMmy9JuWRxbi2qqQ=/0x0/filters:format(jpeg)/pic1022221.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/J8xEJa63B--mvnIcXpJpgw__small/img/1YHULp5RRAzAtiMRLPFIW3LS4OQ=/fit-in/200x150/filters:strip_icc()/pic1022221.jpg",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "2-6",
+    "playTime": "60",
     "onLoan": false
   }
 ]
