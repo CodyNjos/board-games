@@ -3,7 +3,7 @@
 `src/collection.json` is the whole database: a flat array of entries, hand-maintained
 with help from the BGG API. There is no backend — Vite imports the JSON at build time.
 
-As of 2026-09-16: **215 entries** — 186 base games (158 owned, 28 wishlisted) and
+As of 2026-09-24: **219 entries** — 190 base games (161 owned, 28 wishlisted) and
 29 expansions.
 
 ## Entry shape
@@ -85,9 +85,10 @@ report anything the export dropped. Watch for three traps:
   two `<item>` rows sharing a thing id — the second carries an `<originalname>` and
   repeats the same `numplays`, because plays are logged against the thing, not the
   version. `objectId` is the primary key here, so the extra row must be skipped, not
-  appended. As of 2026-09-16 this affects `163412`, listed as both `Patchwork` and
-  `Patchwork: Americana Edition`. Representing owned versions separately would need
-  a different key.
+  appended. As of 2026-09-24 this affects `163412`, listed as both `Patchwork` and
+  `Patchwork: Americana Edition` — the latter now `own=0 prevowned=1` (given away),
+  yet still occupying the id, so disposing of a version does not retire the row.
+  Representing owned versions separately would need a different key.
 - BGG **renames** games, and `collection.json` will still hold the old title —
   `objectId` is the key, never the name. As of the 2026-09-16 export, BGG had
   `46614` as `Triplo` (recorded here as `Nonaga`) and `266524` as `Parks` (recorded
@@ -144,8 +145,12 @@ declines to flag things that merely look like expansions.
   those of the expansions you **own** — owning `Catan: 5-6 Player Expansion` makes
   Catan a 3–6 player game for filtering and display. Wishlisted expansions don't
   count; you can't play with a box you don't have.
-- **Header counts exclude expansions**, which is why it reads `158 owned` and not
-  `186`. The expansion total is shown as its own figure.
+- **An entry can be neither owned nor wishlisted.** BGG lists a collection item
+  whose status flags are all zero, and such an entry renders in no filter view —
+  only search reaches it, and it counts toward neither header figure. As of
+  2026-09-24 that is `Kenny G: Keepin' It Saxy Game` (`283217`).
+- **Header counts exclude expansions**, which is why it reads `161 owned` and not
+  `190`. The expansion total is shown as its own figure.
 - **Search matches expansion names** and surfaces the base card with a `matched: …`
   line explaining why it appeared.
 
