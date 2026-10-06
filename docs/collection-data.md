@@ -3,7 +3,7 @@
 `src/collection.json` is the whole database: a flat array of entries, hand-maintained
 with help from the BGG API. There is no backend — Vite imports the JSON at build time.
 
-As of 2026-09-24: **219 entries** — 190 base games (161 owned, 28 wishlisted) and
+As of 2026-10-06: **221 entries** — 192 base games (163 owned, 28 wishlisted) and
 29 expansions.
 
 ## Entry shape
@@ -69,6 +69,7 @@ https://boardgamegeek.com/xmlapi2/collection?username=pancreass
 | `owned` | `item.status@own` |
 | `wishlist` | `item.status@wishlist` |
 | `numPlays` | `item.numplays` |
+| *(exclusion)* | `item.status@prevowned` — see the rule below |
 
 `item.comment` holds a hand-written `"2–5 Players Play Time 20–30 Min"` string that
 mirrors the `players`/`playTime` values — it is a convenience copy, not the source.
@@ -79,7 +80,7 @@ so **any refresh must preserve them** rather than rebuilding entries wholesale.
 
 Diff the export against the file rather than overwriting: match on `objectId`, apply
 only `owned` / `wishlist` / `numPlays`, append entries whose `objectId` is new, and
-report anything the export dropped. Watch for three traps:
+report anything the export dropped. Watch for four traps:
 
 - **The export can list one `objectId` twice.** Owning two versions of a game gives
   two `<item>` rows sharing a thing id — the second carries an `<originalname>` and
@@ -97,6 +98,15 @@ report anything the export dropped. Watch for three traps:
   `boardgameexpansion` before assuming a game is a base game. Don't infer the parent
   from a sibling: the Tanglewoods decks expand both `20 Strong` and
   `20 Strong: Tanglewoods`, but `20 Strong: Solar Sentinels` expands only `20 Strong`.
+  An expansion whose parents are **all** absent from the collection ends up with an
+  empty `expansionOf` and is stored as a base entry — that is the rule working, not
+  a bug. `Everdell: Pearlbrook` (`259996`) is one: it expands `Everdell` and
+  `Everdell: Collector's Edition`, neither of which is owned.
+- **Line endings flip.** With git's `core.autocrlf` on Windows, `collection.json`
+  is LF right after a script writes it and CRLF once git re-checks it out, so a
+  refresh script that hard-codes `\n` in its anchors silently matches nothing and
+  aborts. Detect the endings from the file and reuse them for both the anchors and
+  any appended entries, then confirm the file did not end up mixed.
 
 The export is also not a complete source for a new entry. It omits `<yearpublished>`
 and `<comment>` on some items, and where its `<yearpublished>` differs from the API
@@ -145,12 +155,19 @@ declines to flag things that merely look like expansions.
   those of the expansions you **own** — owning `Catan: 5-6 Player Expansion` makes
   Catan a 3–6 player game for filtering and display. Wishlisted expansions don't
   count; you can't play with a box you don't have.
+- **Previously owned games are not in the collection.** A BGG item with
+  `status@prevowned="1"` is one you no longer have, so it is never added and is
+  **removed** if it is already in the file — a refresh is how a sold or gifted
+  game leaves. Removal discards whatever hand-entered fields that entry carried
+  (`note`, `onLoan`, `loanNote`), so the sync prints them as it goes, and it
+  refuses outright to remove a base game that some expansion still lists as a
+  parent rather than leaving a dangling `expansionOf`.
 - **An entry can be neither owned nor wishlisted.** BGG lists a collection item
   whose status flags are all zero, and such an entry renders in no filter view —
   only search reaches it, and it counts toward neither header figure. As of
-  2026-09-24 that is `Kenny G: Keepin' It Saxy Game` (`283217`).
-- **Header counts exclude expansions**, which is why it reads `161 owned` and not
-  `190`. The expansion total is shown as its own figure.
+  2026-10-06 that is `Kenny G: Keepin' It Saxy Game` (`283217`).
+- **Header counts exclude expansions**, which is why it reads `163 owned` and not
+  `192`. The expansion total is shown as its own figure.
 - **Search matches expansion names** and surfaces the base card with a `matched: …`
   line explaining why it appeared.
 
