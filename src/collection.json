@@ -2907,5 +2907,44 @@
     "players": "2-4",
     "playTime": "40",
     "onLoan": false
+  },
+  {
+    "objectId": "466907",
+    "name": "Le Chocolat",
+    "yearPublished": "2026",
+    "image": "https://cf.geekdo-images.com/YUHME7hcSyKNhCgW-YEKrw__original/img/sMgaJijreg7rL02rJKo7gcZ38EM=/0x0/filters:format(jpeg)/pic9476086.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/YUHME7hcSyKNhCgW-YEKrw__small/img/Z3X1ooObHa9HvAY5Dnm2qBh0L6w=/fit-in/200x150/filters:strip_icc()/pic9476086.jpg",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "2",
+    "playTime": "10",
+    "onLoan": false
+  },
+  {
+    "objectId": "460712",
+    "name": "Mountain Goats: Legacy",
+    "yearPublished": "2026",
+    "image": "https://cf.geekdo-images.com/dXsu87GAJWpF5Rh0fiEkQw__original/img/S1Rsq0x4HGU3LXAnlJ84VMdbYVU=/0x0/filters:format(jpeg)/pic9293080.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/dXsu87GAJWpF5Rh0fiEkQw__small/img/Wc_Wsha-u8Emoyy3BVoSLk2TBD4=/fit-in/200x150/filters:strip_icc()/pic9293080.jpg",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "2-5",
+    "playTime": "20-45",
+    "onLoan": false
+  },
+  {
+    "objectId": "476515",
+    "name": "Woo",
+    "yearPublished": "2026",
+    "image": "https://cf.geekdo-images.com/5FytYszlg90GGaZkkzPOOg__original/img/8RGB9GxlO6lbUH6ZE33l1wYHyQw=/0x0/filters:format(jpeg)/pic9782715.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/5FytYszlg90GGaZkkzPOOg__small/img/1FhQiVZIgDLSQpbuoAyH1iUJCJY=/fit-in/200x150/filters:strip_icc()/pic9782715.jpg",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "2-4",
+    "playTime": "25",
+    "onLoan": false
   }
 ]

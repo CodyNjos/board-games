@@ -3,7 +3,7 @@
 `src/collection.json` is the whole database: a flat array of entries, hand-maintained
 with help from the BGG API. There is no backend — Vite imports the JSON at build time.
 
-As of 2026-10-06: **221 entries** — 192 base games (163 owned, 28 wishlisted) and
+As of 2026-10-14: **224 entries** — 195 base games (166 owned, 28 wishlisted) and
 29 expansions.
 
 ## Entry shape
@@ -166,8 +166,8 @@ declines to flag things that merely look like expansions.
   whose status flags are all zero, and such an entry renders in no filter view —
   only search reaches it, and it counts toward neither header figure. As of
   2026-10-06 that is `Kenny G: Keepin' It Saxy Game` (`283217`).
-- **Header counts exclude expansions**, which is why it reads `163 owned` and not
-  `192`. The expansion total is shown as its own figure.
+- **Header counts exclude expansions**, which is why it reads `166 owned` and not
+  `195`. The expansion total is shown as its own figure.
 - **Search matches expansion names** and surfaces the base card with a `matched: …`
   line explaining why it appeared.
 
