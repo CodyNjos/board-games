@@ -3,8 +3,8 @@
 `src/collection.json` is the whole database: a flat array of entries, hand-maintained
 with help from the BGG API. There is no backend — Vite imports the JSON at build time.
 
-As of 2026-10-16: **225 entries** — 196 base games (167 owned, 28 wishlisted) and
-29 expansions.
+As of 2026-11-02: **228 entries** — 196 base games (167 owned, 28 wishlisted) and
+32 expansions.
 
 ## Entry shape
 
@@ -134,7 +134,7 @@ own yet doesn't corrupt anything — it just gets dropped (see the invariant bel
 
 **Why an array.** Some expansions genuinely fit several bases. All four Railroad Ink
 editions accept the same pack, so `Railroad Ink: Futuristic Expansion Pack` lists
-four parents and appears in all four detail panels. 16 of the 28 expansions have
+four parents and appears in all four detail panels. 16 of the 32 expansions have
 more than one parent; the maximum is 4. This costs nothing visually because
 expansions never get their own grid card — see below.
 
@@ -165,7 +165,7 @@ declines to flag things that merely look like expansions.
 - **An entry can be neither owned nor wishlisted.** BGG lists a collection item
   whose status flags are all zero, and such an entry renders in no filter view —
   only search reaches it, and it counts toward neither header figure. As of
-  2026-10-16 that is `Kenny G: Keepin' It Saxy Game` (`283217`).
+  2026-11-02 that is `Kenny G: Keepin' It Saxy Game` (`283217`).
 - **Header counts exclude expansions**, which is why it reads `167 owned` and not
   `196`. The expansion total is shown as its own figure.
 - **Search matches expansion names** and surfaces the base card with a `matched: …`
