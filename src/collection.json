@@ -164,7 +164,7 @@
     "thumbnail": "https://cf.geekdo-images.com/K03e7G5PaII4S5ILIWPNfw__small/img/qfEKfhMLEFqXYQAtcbOTEcfhSGo=/fit-in/200x150/filters:strip_icc()/pic5440150.jpg",
     "owned": true,
     "wishlist": false,
-    "numPlays": 15,
+    "numPlays": 17,
     "players": "1-4",
     "playTime": "20-30",
     "onLoan": false
@@ -2959,5 +2959,47 @@
     "players": "2-4",
     "playTime": "60-90",
     "onLoan": false
+  },
+  {
+    "objectId": "158624",
+    "name": "Machi Koro: Gaming Mega Store",
+    "yearPublished": "2014",
+    "image": "https://cf.geekdo-images.com/93m9ENiHleqHb8X6yomE_w__original/img/HHz4n_rjWyKQWMG6FzQOmC1eniU=/0x0/filters:format(jpeg)/pic2452671.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/93m9ENiHleqHb8X6yomE_w__small/img/mo8FdYSoc-u0FKwPDRbhMl6tot0=/fit-in/200x150/filters:strip_icc()/pic2452671.jpg",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "2-4",
+    "playTime": "30-60",
+    "onLoan": false,
+    "expansionOf": ["143884"]
+  },
+  {
+    "objectId": "143789",
+    "name": "Machi Koro: Harbor",
+    "yearPublished": "2012",
+    "image": "https://cf.geekdo-images.com/o5EyvF7qZD-VcQnvXqyKsg__original/img/3AG--XYBlK48b44pQqWV6jkuhAg=/0x0/filters:format(jpeg)/pic2034049.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/o5EyvF7qZD-VcQnvXqyKsg__small/img/FM9bnkcCBf2xLPekW97-YNhD_yU=/fit-in/200x150/filters:strip_icc()/pic2034049.jpg",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "2-5",
+    "playTime": "30",
+    "onLoan": false,
+    "expansionOf": ["143884"]
+  },
+  {
+    "objectId": "160154",
+    "name": "Machi Koro: Millionaire's Row",
+    "yearPublished": "2014",
+    "image": "https://cf.geekdo-images.com/5SWmP8J_Xif6nAxTL0k4qw__original/img/D4yIaVAtXdKguq25DCr8Y1e61OQ=/0x0/filters:format(jpeg)/pic4278304.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/5SWmP8J_Xif6nAxTL0k4qw__small/img/KhgUs2OzLTaIf-3TSkUZ_ui-PV8=/fit-in/200x150/filters:strip_icc()/pic4278304.jpg",
+    "owned": true,
+    "wishlist": false,
+    "numPlays": 0,
+    "players": "2-4",
+    "playTime": "30",
+    "onLoan": false,
+    "expansionOf": ["143884"]
   }
 ]
