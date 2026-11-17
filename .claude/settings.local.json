@@ -19,7 +19,24 @@
       "Bash(ls \"C:\\\\Scheels Software\\\\Shenagagins\\\\board-games\"/*.ico)",
       "Bash(ls \"C:\\\\Scheels Software\\\\Shenagagins\\\\utilities\\\\Utilities.React\"/*.ico)",
       "Bash(node sync.js)",
-      "Bash(node --input-type=commonjs -e ' *)"
+      "Bash(node --input-type=commonjs -e ' *)",
+      "Read(//c/Users/cjnjos/AppData/Local/Temp/claude/C--Scheels-Software-Shenagagins-board-games/12dabdfc-e485-4b21-a3cb-510c73046e6e/scratchpad/**)",
+      "Bash(node compare.mjs)",
+      "Bash(sed -i '595s/\"numPlays\": 91/\"numPlays\": 93/; 2651s/\"numPlays\": 15/\"numPlays\": 19/' src/collection.json)",
+      "Bash(node -e \"const c=require\\('./src/collection.json'\\); for\\(const id of ['411255','14781']\\){const g=c.find\\(x=>x.objectId===id\\); console.log\\(id, g.name, g.numPlays\\)}\")",
+      "Bash(cd *)",
+      "Read(//c/Users/cjnjos/.claude/plugins/cache/scheels-skills/**)",
+      "Read(//c/Users/cjnjos/.claude/plugins/cache/**)",
+      "Bash(node __TRACKED_VAR__/derive-expansions.mjs src/collection.json __TRACKED_VAR__/bgg-report.json)",
+      "Bash(cp src/collection.json __TRACKED_VAR__/collection.backup.json)",
+      "Bash(node __TRACKED_VAR__/apply-expansions.mjs src/collection.json __TRACKED_VAR__/bgg-report.json)",
+      "Bash(SMOKE_SEARCH=?g=199561 node __TRACKED_VAR__/smoke.mjs)",
+      "Bash(npm run *)",
+      "Bash(cp src/collection.json __TRACKED_VAR__/collection.pre-sync.json)",
+      "Bash(node __TRACKED_VAR__/sync-collection.mjs src/collection.json __TRACKED_VAR__/bgg-collection-2026-08-17.json)",
+      "Bash(git diff *)",
+      "Bash(cp src/collection.json __TRACKED_VAR__/collection.pre-sync-0916.json)",
+      "Bash(node __TRACKED_VAR__/sync-collection.mjs src/collection.json __TRACKED_VAR__/bgg-collection-2026-09-16.json)"
     ]
   }
 }
